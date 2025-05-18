@@ -1,0 +1,119 @@
+version: 2.1
+orbs:
+  python: circleci/python@3.1.0
+  node: circleci/node@7.1.0
+  # gh-pages: sugarshin/gh-pages@1.0.1
+
+commands:
+  setup:
+    steps:
+      - checkout
+      - run:
+          name: delete and create dist directory
+          command: |
+            rm -rf dist
+            mkdir -p dist
+      - run:
+          name: upgrade pip
+          command: |
+            pip install --upgrade pip
+      - run:
+          name: install pipx
+          command: |
+            pip install --user pipx
+      - run:
+          name: setup pipx
+          command: |
+            pipx ensurepath --force
+
+workflows:
+  build_and_deploy:
+    jobs:
+      - build:
+          filters:
+            tags:
+              only: /.*/
+          context:
+            - "github"
+      - test:
+          requires:
+            - build
+          context:
+            - "github"
+      - deploy:
+          requires:
+            - test
+          context:
+            - "github"
+          filters:
+            branches:
+              only: main
+
+jobs:
+  build:
+    executor: python/default
+    steps:
+      - setup
+      - run:
+          name: install iptvtools
+          command: |
+            pipx install --include-deps iptvtools
+      - run:
+          name: enhance padres TDT Channels list
+          command: |
+            ./padres_tdt_channels_list.sh
+      - run:
+          name: generate padres M3U8 list
+          command: |
+            ./generate_m3u8.sh
+      - run:
+          name: copy padres M3U8 list to dist
+          command: |
+            cp *.m3u* dist/
+      - persist_to_workspace:
+          root: dist
+          paths: 
+            - .
+
+  test:
+    executor: python/default
+    steps:
+      - setup
+      - attach_workspace:
+          at: dist
+      - run:
+          name: install requests
+          command: |
+            pipx install --include-deps requests
+      - run:
+          name: install ffmpeg-python
+          command: |
+            pipx install --include-deps ffmpeg-python
+
+  deploy:
+    executor: node/default
+    steps:
+      - checkout
+      - attach_workspace:
+          at: dist
+      - run:
+          name: install gh-pages
+          command: |
+            npm install --silent gh-pages
+      - run:
+          name: setup git environments
+          command: |
+            git config user.email "circle-ci@users.noreply.github.com"
+            git config user.name "circle-ci"
+      - add_ssh_keys:
+          fingerprints:
+            - "05:c0:0c:2f:f7:ac:a6:db:53:a6:04:8f:64:3a:c0:84"
+      - run:
+          name: deploy to gh-pages branch
+          command: |
+            npx gh-pages \
+            --message "[skip ci] Updated by ${CIRCLE_BUILD_URL}" \
+            -d dist
+          environment:
+            CACHE_DIR: /tmp
+            NODE_DEBUG: gh-pages
