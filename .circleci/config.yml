@@ -58,6 +58,18 @@ jobs:
           name: install iptvtools
           command: |
             pipx install --include-deps iptvtools
+      - run:
+          name: enhance padres TDT Channels list
+          command: |
+            ./padres_tdt_channels_list.sh
+      - run:
+          name: generate padres M3U8 list
+          command: |
+            ./generate_m3u8.sh
+      - run:
+          name: copy padres M3U8 list to dist
+          command: |
+            cp *.m3u* dist/
       - persist_to_workspace:
           root: dist
           paths: 
@@ -78,14 +90,6 @@ jobs:
           command: |
             pipx install --include-deps ffmpeg-python
 
-  # deploy:
-  #   executor: gh-pages/default
-  #   steps:
-  #     - gh-pages/deploy:
-  #         git-email: circle-ci@users.noreply.github.com
-  #         git-user: circle-ci
-  #         ssh-fingerprints: "44:0d:4e:92:0b:49:7d:99:c0:ad:c3:6b:f4:d4:db:67"
-
   deploy:
     executor: node/default
     steps:
@@ -103,11 +107,7 @@ jobs:
             git config user.name "circle-ci"
       - add_ssh_keys:
           fingerprints:
-            - "44:0d:4e:92:0b:49:7d:99:c0:ad:c3:6b:f4:d4:db:67"
-      - run:
-          name: test
-          command: |
-            ls -al
+            - "05:c0:0c:2f:f7:ac:a6:db:53:a6:04:8f:64:3a:c0:84"
       - run:
           name: deploy to gh-pages branch
           command: |

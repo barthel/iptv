@@ -1,0 +1,6 @@
+{
+    "Antena3": "http://185.189.225.150:85/Antena3HD/index.m3u8",
+    "Cuatro": "http://185.189.225.150:85/CuatroHD/index.m3u8",
+    "Telecinco": "http://185.189.225.150:85/TeleCincoHD/index.m3u8",
+    "LaSexta": "http://185.189.225.150:85/LaSexta/index.m3u8"
+}
