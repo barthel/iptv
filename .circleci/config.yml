@@ -13,31 +13,31 @@ commands:
           command: |
             rm -rf dist
             mkdir -p dist
-      - run:
-          name: install ffmpeg
-          command: |
-            sudo apt update
-            sudo apt install ffmpeg
-      - run:
-          name: upgrade pip
-          command: |
-            pip install --upgrade pip
-      - run:
-          name: install pipx
-          command: |
-            pip install --user pipx
-      - run:
-          name: setup pipx
-          command: |
-            pipx ensurepath --force
-      - run:
-          name: install requests
-          command: |
-            pipx install --include-deps requests
-      - run:
-          name: install ffmpeg-python
-          command: |
-            pipx install --include-deps ffmpeg-python
+      # - run:
+      #     name: install ffmpeg
+      #     command: |
+      #       sudo apt update
+      #       sudo apt install ffmpeg
+      # - run:
+      #     name: upgrade pip
+      #     command: |
+      #       pip install --upgrade pip
+      # - run:
+      #     name: install pipx
+      #     command: |
+      #       pip install --user pipx
+      # - run:
+      #     name: setup pipx
+      #     command: |
+      #       pipx ensurepath --force
+      # - run:
+      #     name: install requests
+      #     command: |
+      #       pipx install --include-deps requests
+      # - run:
+      #     name: install ffmpeg-python
+      #     command: |
+      #       pipx install --include-deps ffmpeg-python
       - jq/install
 
 workflows:

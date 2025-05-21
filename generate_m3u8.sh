@@ -22,19 +22,15 @@ jq -r '
         (
         if $channel.options then
             [ $channel.options[]? | select(.format == "m3u8") | .url ] |
-            if length == 0 then
-            ["#EXTINF:-1 tvg-id=\"\($channel.epg_id)\" tvg-name=\"\($channel.name)\" tvg-logo=\"\($channel.logo)\" group-title=\"\($ambit.name)\", \($channel.name)\n# No options available"]
-            else
-            to_entries | map(
-                if .key > 0 then
-                    "#EXTINF:-1 tvg-id=\"\($channel.epg_id)\" tvg-name=\"\($channel.name) [\(.key)]\" tvg-logo=\"\($channel.logo)\" group-title=\"\($ambit.name)\", \($channel.name)\n\(.value)"
-                else
-                    "#EXTINF:-1 tvg-id=\"\($channel.epg_id)\" tvg-name=\"\($channel.name)\" tvg-logo=\"\($channel.logo)\" group-title=\"\($ambit.name)\", \($channel.name)\n\(.value)"
-                end
-            )
+            if length > 0 then
+                to_entries | map(
+                    if .key > 0 then
+                        "#EXTINF:-1 tvg-id=\"\($channel.epg_id)\" tvg-name=\"\($channel.name) [\(.key)]\" tvg-logo=\"\($channel.logo)\" group-title=\"\($ambit.name)\", \($channel.name)\n\(.value)"
+                    else
+                        "#EXTINF:-1 tvg-id=\"\($channel.epg_id)\" tvg-name=\"\($channel.name)\" tvg-logo=\"\($channel.logo)\" group-title=\"\($ambit.name)\", \($channel.name)\n\(.value)"
+                    end
+                )
             end
-        else
-            ["#EXTINF:-1 tvg-id=\"\($channel.epg_id)\" tvg-name=\"\($channel.name)\" tvg-logo=\"\($channel.logo)\" group-title=\"\($ambit.name)\", \($channel.name)\n# No options available"]
         end
         )
     ) | .[]
