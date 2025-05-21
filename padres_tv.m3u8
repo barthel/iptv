@@ -119,7 +119,7 @@ https://rmtv.akamaized.net/hls/live/2043154/rmtv-en-web/master.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Barça TV" tvg-logo="https://graph.facebook.com/fcbarcelona/picture?width=200&height=200" group-title="Deportivos", Barça TV
 # No options available
 #EXTINF:-1 tvg-id="SevillaTV.TV" tvg-name="Sevilla TV" tvg-logo="https://graph.facebook.com/sevillafc/picture?width=200&height=200" group-title="Deportivos", Sevilla TV
-# No options available
+https://open.http.mp.streamamg.com/p/3001314/sp/300131400/playManifest/entryId/0_ye0b8tc0/format/applehttp/protocol/https/uiConfId/30026292/a.m3u8
 #EXTINF:-1 tvg-id="Betis.TV" tvg-name="Betis TV" tvg-logo="https://graph.facebook.com/realbetisbalompie/picture?width=200&height=200" group-title="Deportivos", Betis TV
 # No options available
 #EXTINF:-1 tvg-id="null" tvg-name="Real Sociedad TV" tvg-logo="https://graph.facebook.com/RealSociedadFutbol/picture?width=200&height=200" group-title="Deportivos", Real Sociedad TV
@@ -223,9 +223,9 @@ https://hola-play-2108fd06-86d4-44e8-9867-c35b4895a1c1-es.fast.rakuten.tv/v1/mas
 #EXTINF:-1 tvg-id="A3P_Hormiguero.TV" tvg-name="El Hormiguero" tvg-logo="https://graph.facebook.com/elhormiguero/picture?width=200&height=200" group-title="Eventuales", El Hormiguero
 # No options available
 #EXTINF:-1 tvg-id="A3P_ClubComedia.TV" tvg-name="El club de la comedia" tvg-logo="https://graph.facebook.com/ElClubDeLaComediaEnlaSexta/picture?width=200&height=200" group-title="Eventuales", El club de la comedia
-# No options available
+https://fast-channels.atresmedia.com/648f47f7a2ffb0e40aeff3ad/648f47f7a2ffb0e40aeff3ad.m3u8
 #EXTINF:-1 tvg-id="A3P_EqInvestigacion.TV" tvg-name="Equipo de investigación" tvg-logo="https://graph.facebook.com/EqInvestigacion/picture?width=200&height=200" group-title="Eventuales", Equipo de investigación
-# No options available
+https://fast-channels.atresmedia.com/648ef5551756b0e429af83cc/648ef5551756b0e429af83cc.m3u8
 #EXTINF:-1 tvg-id="A3P_AquiNoHayQ.TV" tvg-name="Aquí no hay quién viva" tvg-logo="https://graph.facebook.com/AQUINHQV/picture?width=200&height=200" group-title="Eventuales", Aquí no hay quién viva
 # No options available
 #EXTINF:-1 tvg-id="A3P_FisicaOQuimica.TV" tvg-name="Física o química" tvg-logo="https://graph.facebook.com/fisicaoquimica/picture?width=200&height=200" group-title="Eventuales", Física o química
