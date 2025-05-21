@@ -2,7 +2,7 @@ version: 2.1
 orbs:
   python: circleci/python@3.1.0
   node: circleci/node@7.1.0
-  # gh-pages: sugarshin/gh-pages@1.0.1
+  jq: circleci/jq@3.0.2
 
 commands:
   setup:
@@ -13,6 +13,11 @@ commands:
           command: |
             rm -rf dist
             mkdir -p dist
+      - run:
+          name: install ffmpeg
+          command: |
+            sudo apt update
+            sudo apt install ffmpeg
       - run:
           name: upgrade pip
           command: |
@@ -25,6 +30,15 @@ commands:
           name: setup pipx
           command: |
             pipx ensurepath --force
+      - run:
+          name: install requests
+          command: |
+            pipx install --include-deps requests
+      - run:
+          name: install ffmpeg-python
+          command: |
+            pipx install --include-deps ffmpeg-python
+      - jq/install
 
 workflows:
   build_and_deploy:
@@ -82,13 +96,30 @@ jobs:
       - attach_workspace:
           at: dist
       - run:
-          name: install requests
+          name: install iptvtools
           command: |
-            pipx install --include-deps requests
+            pipx install --include-deps iptvtools
       - run:
-          name: install ffmpeg-python
+          name: clone IPTVChecker repository
           command: |
-            pipx install --include-deps ffmpeg-python
+            git clone https://github.com/NewsGuyTor/IPTVChecker.git
+      - run:
+          name: install IPTVChecker
+          command: |
+            pip install -r IPTVChecker/requirements.txt
+      - run:
+          name: test M3U8 list with IPTVChecker
+          command: |
+            python IPTVChecker/IPTV_checker.py dist/*.m3u* -vv -extended 30 -split
+      # - run:
+      #     name: test M3U8 list with iptvtools-cli
+      #     command: |
+      #       iptv-filter -i dist/*.m3u*
+      - run:
+          name: list
+          command: |
+            ls -alh *
+            cat *.m3u*
 
   deploy:
     executor: node/default

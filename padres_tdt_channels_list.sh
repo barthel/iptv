@@ -5,6 +5,12 @@ LOCAL_JSON_INPUT_FILE="tv.json"
 LOCAL_JSON_OUTPUT_FILE="padres_tv.json"
 CHANNEL_MAP_FILE="padres_map.json"
 
+# Ensure jq is installed
+if ! command -v jq &> /dev/null; then
+    echo "jq is not installed. Please install jq to use this script."
+    exit 1
+fi
+
 # Ausgabe der Kanäle ohne 'options' mit dem 'm3u8'-Format
 _jq_output=$(jq '[
     .countries[].ambits[].channels[] |
