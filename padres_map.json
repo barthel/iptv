@@ -2,5 +2,8 @@
     "Antena3": "http://185.189.225.150:85/Antena3HD/index.m3u8",
     "Cuatro": "http://185.189.225.150:85/CuatroHD/index.m3u8",
     "Telecinco": "http://185.189.225.150:85/TeleCincoHD/index.m3u8",
-    "LaSexta": "http://185.189.225.150:85/LaSexta/index.m3u8"
+    "LaSexta": "http://185.189.225.150:85/LaSexta/index.m3u8",
+    "SevillaTV": "https://open.http.mp.streamamg.com/p/3001314/sp/300131400/playManifest/entryId/0_ye0b8tc0/format/applehttp/protocol/https/uiConfId/30026292/a.m3u8",
+    "Elclubdelacomedia": "https://fast-channels.atresmedia.com/648f47f7a2ffb0e40aeff3ad/648f47f7a2ffb0e40aeff3ad.m3u8",
+    "Equipodeinvestigación": "https://fast-channels.atresmedia.com/648ef5551756b0e429af83cc/648ef5551756b0e429af83cc.m3u8"
 }
