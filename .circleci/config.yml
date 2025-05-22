@@ -11,33 +11,8 @@ commands:
       - run:
           name: delete and create dist directory
           command: |
-            rm -rf dist
-            mkdir -p dist
-      # - run:
-      #     name: install ffmpeg
-      #     command: |
-      #       sudo apt update
-      #       sudo apt install ffmpeg
-      # - run:
-      #     name: upgrade pip
-      #     command: |
-      #       pip install --upgrade pip
-      # - run:
-      #     name: install pipx
-      #     command: |
-      #       pip install --user pipx
-      # - run:
-      #     name: setup pipx
-      #     command: |
-      #       pipx ensurepath --force
-      # - run:
-      #     name: install requests
-      #     command: |
-      #       pipx install --include-deps requests
-      # - run:
-      #     name: install ffmpeg-python
-      #     command: |
-      #       pipx install --include-deps ffmpeg-python
+            rm -rf dist tmp
+            mkdir -p dist tmp
       - jq/install
 
 workflows:
@@ -79,9 +54,9 @@ jobs:
       - run:
           name: copy padres M3U8 list to dist
           command: |
-            cp *.m3u* dist/
+            cp *.m3u* tmp/
       - persist_to_workspace:
-          root: dist
+          root: tmp
           paths: 
             - .
 
@@ -89,33 +64,52 @@ jobs:
     executor: python/default
     steps:
       - setup
-      - attach_workspace:
-          at: dist
       - run:
-          name: cat dist
+          name: install ffmpeg
           command: |
-            ls -alh dist/
-            cat dist/*.m3u*
-      # - run:
-      #     name: install iptvtools
-      #     command: |
-      #       pipx install --include-deps iptvtools
-      # - run:
-      #     name: clone IPTVChecker repository
-      #     command: |
-      #       git clone https://github.com/NewsGuyTor/IPTVChecker.git
-      # - run:
-      #     name: install IPTVChecker
-      #     command: |
-      #       pip install -r IPTVChecker/requirements.txt
-      # - run:
-      #     name: test M3U8 list with IPTVChecker
-      #     command: |
-      #       python IPTVChecker/IPTV_checker.py dist/*.m3u* -vv -extended 30 -split
-      # - run:
-      #     name: test M3U8 list with iptvtools-cli
-      #     command: |
-      #       iptv-filter -i dist/*.m3u*
+            sudo apt update
+            sudo apt install ffmpeg
+      - run:
+          name: clone IPTVChecker repository
+          command: |
+            git clone https://github.com/NewsGuyTor/IPTVChecker.git
+      - run:
+          name: install IPTVChecker
+          command: |
+            pip install -r IPTVChecker/requirements.txt
+      - run:
+          name: patch/fix IPTVChecker
+          command: |
+            sed -i 's/^\( *min_data_threshold = 1024\).*/\1/' IPTVChecker/IPTV_checker.py
+            sed -i 's/^\( *\)capture_frame(/\1# capture_frame(/' IPTVChecker/IPTV_checker.py
+            cat IPTVChecker/IPTV_checker.py
+      - attach_workspace:
+          at: tmp
+      - run:
+          name: test M3U8 list with IPTVChecker
+          no_output_timeout: 2h
+          command: |
+            cd tmp/
+            for file in *.m3u*; do
+                if [ -e "${file}" ]; then
+                    echo "Verarbeite Datei: ${file}"
+                    time python ../IPTVChecker/IPTV_checker.py "${file}" -split
+                fi
+            done
+            cd -
+      - run:
+          name: copy working M3U8 lists to dist
+          command: |
+            cd tmp/
+            find . -type f -name "*_working.m3u*" | while read _file; do
+              _newfile=$(echo "${_file}" | sed 's/_working//')
+              cp -f "${_file}" "../dist/${_newfile}"
+            done
+            cd -
+      - persist_to_workspace:
+          root: dist
+          paths: 
+            - .
 
   deploy:
     executor: node/default
