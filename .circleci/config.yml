@@ -52,11 +52,19 @@ jobs:
           command: |
             ./generate_m3u8.sh
       - run:
-          name: copy padres M3U8 list to dist
+          name: copy M3U8 list to tmp/
           command: |
             cp *.m3u* tmp/
+      - run:
+          name: copy EPG XML to dist/
+          command: |
+            cp *-epg.xml dist/
       - persist_to_workspace:
           root: tmp
+          paths: 
+            - .
+      - persist_to_workspace:
+          root: dist
           paths: 
             - .
 
@@ -87,25 +95,25 @@ jobs:
           at: tmp
       - run:
           name: test M3U8 list with IPTVChecker
-          no_output_timeout: 2h
+          no_output_timeout: 1h
           command: |
-            cd tmp/
+            pushd tmp/
             for file in *.m3u*; do
                 if [ -e "${file}" ]; then
                     echo "Verarbeite Datei: ${file}"
                     time python ../IPTVChecker/IPTV_checker.py "${file}" -split
                 fi
             done
-            cd -
+            popd
       - run:
           name: copy working M3U8 lists to dist
           command: |
-            cd tmp/
+            pushd tmp/
             find . -type f -name "*_working.m3u*" | while read _file; do
               _newfile=$(echo "${_file}" | sed 's/_working//')
               cp -f "${_file}" "../dist/${_newfile}"
             done
-            cd -
+            popd
       - persist_to_workspace:
           root: dist
           paths: 
