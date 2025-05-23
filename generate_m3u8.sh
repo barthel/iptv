@@ -1,7 +1,7 @@
 #!/bin/bash
 # Local storage path for the JSON file
-LOCAL_JSON_FILE="padres_tv.json"
-M3U_FILE="padres_tv.m3u8"
+LOCAL_JSON_FILE="_tv.json"
+M3U_FILE="tv.m3u8"
 
 echo "Creating new M3U playlist..."
 
@@ -12,8 +12,8 @@ if ! command -v jq &> /dev/null; then
 fi
 
 # Start the M3U file with the header and EPG URL
-echo "#EXTM3U Padres TV https://barthel.github.io/iptv/padres_tv.m3u8" > "${M3U_FILE}"
-echo "#EXTM3U url-tvg=\"https://www.tdtchannels.com/epg/TV.xml.gz\"" >> "${M3U_FILE}"
+echo "#EXTM3U IPTV https://barthel.github.io/iptv/${M3U_FILE}" > "${M3U_FILE}"
+echo "#EXTM3U url-tvg=\"https://barthel.github.io/iptv-epg/tv-epg.m3u8\"" >> "${M3U_FILE}"
 
 # Parse JSON with jq to generate M3U entries
 jq -r '
@@ -38,6 +38,6 @@ jq -r '
         end
         )
     ) | .[]
-' "$LOCAL_JSON_FILE" >> "$M3U_FILE"
-
-echo "M3U playlist has been created: $M3U_FILE"
+' "${LOCAL_JSON_FILE}" >> "${M3U_FILE}"
+sed -i "" '/^$/d' "${M3U_FILE}"
+echo "M3U playlist has been created: ${M3U_FILE}"

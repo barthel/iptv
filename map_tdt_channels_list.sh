@@ -2,8 +2,8 @@
 
 # Local storage paths for the JSON files
 LOCAL_JSON_INPUT_FILE="tv.json"
-LOCAL_JSON_OUTPUT_FILE="padres_tv.json"
-CHANNEL_MAP_FILE="padres_map.json"
+LOCAL_JSON_OUTPUT_FILE="_tv.json"
+CHANNEL_MAP_FILE="tv_map.json"
 
 # Ensure jq is installed
 if ! command -v jq &> /dev/null; then
