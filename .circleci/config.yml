@@ -24,14 +24,19 @@ workflows:
               only: /.*/
           context:
             - "github"
-      - test:
+      - check:
           requires:
             - build
           context:
             - "github"
+      - filter:
+          requires:
+            - check
+          context:
+            - "github"
       - deploy:
           requires:
-            - test
+            - filter
           context:
             - "github"
           filters:
@@ -41,30 +46,31 @@ workflows:
 jobs:
   build:
     executor: python/default
+    resource_class: small
     steps:
       - setup
       - run:
-          name: enhance padres TDT Channels list
+          name: enhance TDT Channels list
           command: |
-            ./padres_tdt_channels_list.sh
+            ./map_tdt_channels_list.sh
       - run:
-          name: generate padres M3U8 list
+          name: generate M3U list
           command: |
             ./generate_m3u8.sh
       - run:
-          name: copy M3U8 list to tmp/
+          name: copy M3U list to tmp/
           command: |
             cp *.m3u* tmp/
+      - run:
+          name: ls -al tmp/
+          command: |
+            ls -al tmp/
       - persist_to_workspace:
           root: tmp
           paths: 
             - .
-      - persist_to_workspace:
-          root: dist
-          paths: 
-            - .
 
-  test:
+  check:
     executor: python/default
     steps:
       - setup
@@ -90,7 +96,7 @@ jobs:
       - attach_workspace:
           at: tmp
       - run:
-          name: test M3U8 list with IPTVChecker
+          name: check M3U list with IPTVChecker
           no_output_timeout: 1h
           command: |
             pushd tmp/
@@ -102,14 +108,51 @@ jobs:
             done
             popd
       - run:
-          name: copy working M3U8 lists to dist
+          name: ls -al tmp/
+          command: |
+            ls -al tmp/
+      - run:
+          name: rename and copy working M3U lists to dist
           command: |
             pushd tmp/
             find . -type f -name "*_working.m3u*" | while read _file; do
               _newfile=$(echo "${_file}" | sed 's/_working//')
+              echo "copy: ${_file} to: ../dist/${_newfile}"
               cp -f "${_file}" "../dist/${_newfile}"
             done
             popd
+      - run:
+          name: ls -al dist/
+          command: |
+            ls -al dist/
+      - persist_to_workspace:
+          root: dist
+          paths: 
+            - .
+
+  filter:
+    executor: python/default
+    resource_class: small
+    steps:
+      - setup
+      - attach_workspace:
+          at: dist
+      - run:
+          name: ls -al dist/
+          command: |
+            ls -al dist/
+      - run:
+          name: filter M3U list
+          command: |
+            pushd dist/
+            time python ../filter_white_whitelist_m3u8.py
+            popd
+          environment:
+            WHITELIST_DIR: ..
+      - run:
+          name: ls -al dist/
+          command: |
+            ls -al dist/
       - persist_to_workspace:
           root: dist
           paths: 
@@ -117,6 +160,7 @@ jobs:
 
   deploy:
     executor: node/default
+    resource_class: small
     steps:
       - checkout
       - attach_workspace:
@@ -133,6 +177,10 @@ jobs:
       - add_ssh_keys:
           fingerprints:
             - "05:c0:0c:2f:f7:ac:a6:db:53:a6:04:8f:64:3a:c0:84"
+      - run:
+          name: ls -al dist/
+          command: |
+            ls -al dist/
       - run:
           name: deploy to gh-pages branch
           command: |
