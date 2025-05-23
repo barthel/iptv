@@ -55,10 +55,6 @@ jobs:
           name: copy M3U8 list to tmp/
           command: |
             cp *.m3u* tmp/
-      - run:
-          name: copy EPG XML to dist/
-          command: |
-            cp *-epg.xml dist/
       - persist_to_workspace:
           root: tmp
           paths: 
