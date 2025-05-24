@@ -75,6 +75,8 @@ https://limited31.todostreaming.es/live/noroestetv-livestream.m3u8
 https://tv.interalmeria.tv/directo/live.m3u8
 #EXTINF:-1 tvg-id="TuyaLaJanda.TV" tvg-name="Tuya La Janda TV" tvg-logo="https://graph.facebook.com/tuyalajandatv/picture?width=200&height=200" group-title="Andalucía", Tuya La Janda TV
 https://play.agenciastreaming.com:8081/tuyaespana/index.m3u8
+#EXTINF:-1 tvg-id="null" tvg-name="TV Centro Andalucía" tvg-logo="https://graph.facebook.com/TVCentroAndalucia/picture?width=200&height=200" group-title="Andalucía", TV Centro Andalucía
+https://video0.rogohosting.com:19360/8050/8050.m3u8
 #EXTINF:-1 tvg-id="OndaAlgeciras.TV" tvg-name="Onda Algeciras TV" tvg-logo="https://graph.facebook.com/ondaalgecirastv/picture?width=200&height=200" group-title="Andalucía", Onda Algeciras TV
 https://cloudtv.provideo.es/live/algecirastv-livestream.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Estepona TV" tvg-logo="https://graph.facebook.com/esteponatelevision/picture?width=200&height=200" group-title="Andalucía", Estepona TV
@@ -125,6 +127,8 @@ https://cdnapisec.kaltura.com/p/2288691/sp/228869100/playManifest/entryId/1_sqa9
 https://cdnapisec.kaltura.com/p/2288691/sp/228869100/playManifest/entryId/1_belryxvp/protocol/https/format/applehttp/a.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Guada TV Media" tvg-logo="https://graph.facebook.com/GuadaTV.TV/picture?width=200&height=200" group-title="Castilla-La Mancha", Guada TV Media
 https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=12689&live=1
+#EXTINF:-1 tvg-id="null" tvg-name="Visión 6 TV" tvg-logo="https://graph.facebook.com/104927246235553/picture?width=200&height=200" group-title="Castilla-La Mancha", Visión 6 TV
+https://streaming.proceso.info:8888/vision6-web/stream.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Imás TV" tvg-logo="https://graph.facebook.com/television.imas/picture?width=200&height=200" group-title="Castilla-La Mancha", Imás TV
 https://secure3.todostreaming.es/live/imastv-livestream.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Alcarria TV" tvg-logo="https://graph.facebook.com/AlcarriaTV/picture?width=200&height=200" group-title="Castilla-La Mancha", Alcarria TV
@@ -315,8 +319,6 @@ https://d3749synfikwkv.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68
 https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/index.m3u8
 #EXTINF:-1 tvg-id="DW.TV" tvg-name="DW Alemania [1]" tvg-logo="https://graph.facebook.com/dw.espanol/picture?width=200&height=200" group-title="Int. Europa", DW Alemania
 https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8
-#EXTINF:-1 tvg-id="null" tvg-name="Das Erste Alemania" tvg-logo="https://graph.facebook.com/DasErste/picture?width=200&height=200" group-title="Int. Europa", Das Erste Alemania
-https://daserste-live.ard-mcdn.de/daserste/live/hls/int/master.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="WDR Alemania" tvg-logo="https://graph.facebook.com/WDR/picture?width=200&height=200" group-title="Int. Europa", WDR Alemania
 https://wdrfsww247.akamaized.net/hls/live/2009628/wdr_msl4_fs247ww/master.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="NDR Niedersachsen Alemania" tvg-logo="https://graph.facebook.com/ndrniedersachsen/picture?width=200&height=200" group-title="Int. Europa", NDR Niedersachsen Alemania
@@ -347,6 +349,8 @@ http://streamvideol1.luxnet.ua/news24/news24.stream/playlist.m3u8
 https://freedom.cdn-01.cosmonova.net.ua/mobile-app/main/freedom/master.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Current Time TV" tvg-logo="https://graph.facebook.com/currenttimetv/picture?width=200&height=200" group-title="Int. Europa", Current Time TV
 https://rfe-ingest.akamaized.net/hls/live/2033043/tvmc05/master.m3u8
+#EXTINF:-1 tvg-id="null" tvg-name="ABC News USA" tvg-logo="https://graph.facebook.com/ABCNews/picture?width=200&height=200" group-title="Int. América", ABC News USA
+https://content.uplynk.com/channel/3324f2467c414329b3b0cc5cd987b6be.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="CBS News USA" tvg-logo="https://graph.facebook.com/CBSNews/picture?width=200&height=200" group-title="Int. América", CBS News USA
 https://cbsn-us.cbsnstream.cbsnews.com/out/v1/55a8648e8f134e82a470f83d562deeca/master.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Cheddar USA" tvg-logo="https://graph.facebook.com/cheddar/picture?width=200&height=200" group-title="Int. América", Cheddar USA
@@ -451,6 +455,8 @@ https://cdn.live.easybroadcast.io/abr_corp/73_arrabia_hthcj4p/playlist_dvr.m3u8
 https://cdn.live.easybroadcast.io/abr_corp/73_almaghribia_83tz85q/playlist_dvr.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="RASD TV" tvg-logo="https://graph.facebook.com/televisionsaharaui/picture?width=200&height=200" group-title="Int. África", RASD TV
 https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=12830&live=1
+#EXTINF:-1 tvg-id="null" tvg-name="ABC News Australia" tvg-logo="https://graph.facebook.com/abcnews.au/picture?width=200&height=200" group-title="Int. Otros", ABC News Australia
+https://abc-news-dmd-streams-1.akamaized.net/out/v1/abc83881886746b0802dc3e7ca2bc792/index.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Bloomberg Quicktake" tvg-logo="https://yt3.ggpht.com/fTP5oS376nZhVbS55-OocogCJCDH4UXIyRrirF6keIya4AN4I54TmLkFnnjvE4FRq5UMv8BO=s200" group-title="Int. Otros", Bloomberg Quicktake
 https://www.bloomberg.com/media-manifest/streams/qt.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Tastemade" tvg-logo="https://graph.facebook.com/TastemadeEs/picture?width=200&height=200" group-title="Int. Otros", Tastemade
