@@ -1,10 +1,16 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="La1.TV" tvg-name="La 1 [2]" tvg-logo="https://pbs.twimg.com/profile_images/1921959108862709760/fe5Tqhlh_200x200.jpg" group-title="Generalistas", La 1
+https://dh6vo1bovy43s.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-x3gcl32l5ffq2/La_1_ES.m3u8
+#EXTINF:-1 tvg-id="La2.TV" tvg-name="La 2 [2]" tvg-logo="https://graph.facebook.com/la2detve/picture?width=200&height=200" group-title="Generalistas", La 2
+https://di2qeq48iv8ps.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-o8u23e6v7vptv/La_2_ES.m3u8
 #EXTINF:-1 tvg-id="Antena3.TV" tvg-name="Antena 3" tvg-logo="https://graph.facebook.com/antena3/picture?width=200&height=200" group-title="Generalistas", Antena 3
 http://185.189.225.150:85/Antena3HD/index.m3u8
 #EXTINF:-1 tvg-id="Cuatro.TV" tvg-name="Cuatro" tvg-logo="https://graph.facebook.com/cuatro/picture?width=200&height=200" group-title="Generalistas", Cuatro
 http://185.189.225.150:85/CuatroHD/index.m3u8
 #EXTINF:-1 tvg-id="Telecinco.TV" tvg-name="Telecinco" tvg-logo="https://graph.facebook.com/tele5/picture?width=200&height=200" group-title="Generalistas", Telecinco
 http://185.189.225.150:85/TeleCincoHD/index.m3u8
+#EXTINF:-1 tvg-id="24Horas.TV" tvg-name="24h [2]" tvg-logo="https://pbs.twimg.com/profile_images/1144547866393882626/2R0Khn5n_200x200.png" group-title="Informativos", 24h
+https://d3pfmk89wc0vm9.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-nlow3qkp9tmdm/24H_ES.m3u8
 #EXTINF:-1 tvg-id="CanalSurA.TV" tvg-name="Canal Sur Andalucía" tvg-logo="https://graph.facebook.com/canalsurradioytv/picture?width=200&height=200" group-title="Andalucía", Canal Sur Andalucía
 https://live-24-canalsur.interactvty.pro/9bb0f4edcb8946e79f5017ddca6c02b0/26af5488cda642ed2eddd27a6328c93b9c03e9181b9d0a825147a7d978e69202.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Andalucía Cocina" tvg-logo="https://yt3.googleusercontent.com/ytc/APkrFKb6DZpbxOMbN_VANCdenLck4ceg7gxMk5tnkjmM=s200" group-title="Andalucía", Andalucía Cocina
