@@ -30,7 +30,7 @@
                 },
                 {
                   "format": "m3u8",
-                  "url": "https://rtvelivestream.akamaized.net/rtvesec/la1/la1_main_dvr.m3u8",
+                  "url": "https://rtvelivestream.rtve.es/rtvesec/la1/la1_main_dvr.m3u8",
                   "geo2": null,
                   "res": null,
                   "lang": null
@@ -62,7 +62,7 @@
                 },
                 {
                   "format": "m3u8",
-                  "url": "https://rtvelivestream.akamaized.net/rtvesec/la2/la2_main_dvr.m3u8",
+                  "url": "https://rtvelivestream.rtve.es/rtvesec/la2/la2_main_dvr.m3u8",
                   "geo2": null,
                   "res": null,
                   "lang": null
@@ -287,7 +287,7 @@
                 },
                 {
                   "format": "m3u8",
-                  "url": "https://rtvelivestream.akamaized.net/rtvesec/rne/rne_para_todos_main.m3u8",
+                  "url": "https://rtvelivestream.rtve.es/rtvesec/rne/rne_para_todos_main.m3u8",
                   "geo2": null,
                   "res": null,
                   "lang": null
@@ -357,7 +357,7 @@
                 },
                 {
                   "format": "m3u8",
-                  "url": "https://rtvelivestream.akamaized.net/rtvesec/24h/24h_main_dvr.m3u8",
+                  "url": "https://rtvelivestream.rtve.es/rtvesec/24h/24h_main_dvr.m3u8",
                   "geo2": null,
                   "res": null,
                   "lang": null
@@ -539,7 +539,7 @@
                 },
                 {
                   "format": "m3u8",
-                  "url": "https://rtvelivestream-clnx.rtve.es/rtvesec/tdp/tdp_main.m3u8",
+                  "url": "https://rtvelivestream.rtve.es/rtvesec/tdp/tdp_main.m3u8",
                   "geo2": "SP",
                   "res": null,
                   "lang": null
@@ -1028,7 +1028,7 @@
                 },
                 {
                   "format": "m3u8",
-                  "url": "https://rtvelivestream.akamaized.net/rtvesec/clan/clan_main_dvr.m3u8",
+                  "url": "https://rtvelivestream.rtve.es/rtvesec/clan/clan_main_dvr.m3u8",
                   "geo2": "SP",
                   "res": null,
                   "lang": null
@@ -1087,21 +1087,21 @@
                 },
                 {
                   "format": "youtube",
-                  "url": "https://youtu.be/CY0PNsCnU-k",
+                  "url": "https://youtu.be/5_EAA27Pf9c",
                   "geo2": null,
                   "res": null,
                   "lang": null
                 },
                 {
                   "format": "youtube",
-                  "url": "https://youtu.be/fDA-vp_adT4",
+                  "url": "https://youtu.be/-hYZNNGXReM",
                   "geo2": null,
                   "res": null,
                   "lang": null
                 },
                 {
                   "format": "youtube",
-                  "url": "https://youtu.be/rVyY-ZPt18g",
+                  "url": "https://youtu.be/er_-VbYJhxQ",
                   "geo2": null,
                   "res": null,
                   "lang": null
@@ -3667,7 +3667,7 @@
             {
               "name": "La 1 Canarias",
               "web": "https://www.rtve.es/play/videos/directo/tve-canarias/",
-              "logo": "https://pbs.twimg.com/profile_images/899385012801470464/akSvNCqE_200x200.jpg",
+              "logo": "https://pbs.twimg.com/profile_images/1921959108862709760/fe5Tqhlh_200x200.jpg",
               "epg_id": "La1_CAN.TV",
               "options": [
                 {
@@ -4633,7 +4633,7 @@
             {
               "name": "La 1 Catalunya",
               "web": "https://www.rtve.es/play/videos/directo/tve-catalunya/",
-              "logo": "https://pbs.twimg.com/profile_images/899385012801470464/akSvNCqE_200x200.jpg",
+              "logo": "https://pbs.twimg.com/profile_images/1921959108862709760/fe5Tqhlh_200x200.jpg",
               "epg_id": "La1_CAT.TV",
               "options": [
                 {
@@ -7370,7 +7370,7 @@
               "options": [
                 {
                   "format": "m3u8",
-                  "url": "https://rtvelivestream.akamaized.net/rtvesec/int/tvei_eu_main_dvr.m3u8",
+                  "url": "https://rtvelivestream.rtve.es/rtvesec/int/tvei_eu_main_dvr.m3u8",
                   "geo2": null,
                   "res": null,
                   "lang": null
@@ -12298,5 +12298,5 @@
       ]
     }
   ],
-  "updated": 1747424812
+  "updated": 1748036159
 }

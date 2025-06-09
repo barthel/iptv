@@ -3,9 +3,9 @@
 # URL of the M3U JSON file to download
 M3U_JSON_URL="https://www.tdtchannels.com/lists/tv.json"
 # Local storage path for the M3U JSON file
-LOCAL_M3U_JSON_FILE="tv.json"
+LOCAL_M3U_JSON_FILE="tdt-tv.json"
 # Path for storing the hash of the last downloaded M3U JSON file
-M3U_HASH_FILE="tv.hash"
+M3U_HASH_FILE="tdt-tv.hash"
 
 # Download function for M3U JSON
 download_m3u_json() {

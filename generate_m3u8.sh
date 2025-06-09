@@ -1,6 +1,6 @@
 #!/bin/bash
 # Local storage path for the JSON file
-LOCAL_JSON_FILE="_tv.json"
+LOCAL_JSON_FILE="_tdt-tv.json"
 M3U_FILE="tv.m3u8"
 
 echo "Creating new M3U playlist..."
