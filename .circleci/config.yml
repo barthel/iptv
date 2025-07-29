@@ -90,7 +90,7 @@ jobs:
       - run:
           name: patch/fix IPTVChecker
           command: |
-            sed -i 's/^\( *min_data_threshold = 1024\).*/\1 \* 0.8/' IPTVChecker/IPTV_checker.py
+            sed -i 's/^\( *min_data_threshold = 1024\).*/\1/' IPTVChecker/IPTV_checker.py
             sed -i 's/^\( *\)capture_frame(/\1# capture_frame(/' IPTVChecker/IPTV_checker.py
             cat IPTVChecker/IPTV_checker.py
       - attach_workspace:
@@ -103,7 +103,7 @@ jobs:
             for file in *.m3u*; do
                 if [ -e "${file}" ]; then
                     echo "Verarbeite Datei: ${file}"
-                    time python ../IPTVChecker/IPTV_checker.py "${file}" -split
+                    time python ../IPTVChecker/IPTV_checker.py "${file}" -vv -split
                 fi
             done
             popd
