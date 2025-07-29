@@ -92,7 +92,7 @@ jobs:
           command: |
             sed -i 's/^\( *min_data_threshold = 1024\).*/\1/' IPTVChecker/IPTV_checker.py
             sed -i 's/^\( *\)capture_frame(/\1# capture_frame(/' IPTVChecker/IPTV_checker.py
-            sed -i "s/, headers=headers//" IPTVChecker/IPTV_checker.py
+            sed -i 's/headers=headers/proxies=\{\"http\" \: \"http:\/\/2.139.62.85:3128\", \"https\" \: \"https:\/\/2.139.62.85:3128\" \}/' IPTVChecker/IPTV_checker.py
             cat IPTVChecker/IPTV_checker.py
       - attach_workspace:
           at: tmp
@@ -104,7 +104,7 @@ jobs:
             for file in *.m3u*; do
                 if [ -e "${file}" ]; then
                     echo "Verarbeite Datei: ${file}"
-                    time python ../IPTVChecker/IPTV_checker.py "${file}" -timeout 30 -extended 15 -split
+                    time python ../IPTVChecker/IPTV_checker.py "${file}" -vv -timeout 30 -extended 15 -split
                 fi
             done
             popd
