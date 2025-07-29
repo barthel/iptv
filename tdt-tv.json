@@ -5711,7 +5711,7 @@
               "options": [
                 {
                   "format": "m3u8",
-                  "url": "https://streaming004.gestec-video.com/hls/8TV.m3u8",
+                  "url": "https://newscript.gestec-video.com/hls/8TVEVENTOS.m3u8",
                   "geo2": null,
                   "res": null,
                   "lang": null
@@ -12092,5 +12092,5 @@
       ]
     }
   ],
-  "updated": 1753652598
+  "updated": 1753813840
 }
