@@ -309,22 +309,6 @@
               ]
             },
             {
-              "name": "324",
-              "web": "https://www.3cat.cat/3cat/directes/324/",
-              "logo": "https://graph.facebook.com/324cat/picture?width=200&height=200",
-              "epg_id": "324.TV",
-              "options": [
-                {
-                  "format": "m3u8",
-                  "url": "https://directes-tv-int.3catdirectes.cat/live-content/canal324-hls/master.m3u8",
-                  "geo2": null,
-                  "res": null,
-                  "lang": null
-                }
-              ],
-              "extra_info": []
-            },
-            {
               "name": "Euronews",
               "web": "https://es.euronews.com/live",
               "logo": "https://graph.facebook.com/es.euronews/picture?width=200&height=200",
@@ -348,6 +332,22 @@
               "extra_info": [
                 "EMB"
               ]
+            },
+            {
+              "name": "324",
+              "web": "https://www.3cat.cat/3cat/directes/324/",
+              "logo": "https://graph.facebook.com/324cat/picture?width=200&height=200",
+              "epg_id": "324.TV",
+              "options": [
+                {
+                  "format": "m3u8",
+                  "url": "https://directes-tv-int.3catdirectes.cat/live-content/canal324-hls/master.m3u8",
+                  "geo2": null,
+                  "res": null,
+                  "lang": null
+                }
+              ],
+              "extra_info": []
             },
             {
               "name": "El Pa\u00eds",
@@ -9303,7 +9303,7 @@
               "options": [
                 {
                   "format": "m3u8",
-                  "url": "https://ssh101stream.ssh101.com/akamaissh101/ssh101/patscz/playlist.m3u8",
+                  "url": "https://www.redpat.tv/proxy/index.m3u8",
                   "geo2": null,
                   "res": null,
                   "lang": null
@@ -12092,5 +12092,5 @@
       ]
     }
   ],
-  "updated": 1753813840
+  "updated": 1753915093
 }
