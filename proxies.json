@@ -1,39 +1,39 @@
 [
     {
-        "ip": "46.226.148.105",
+        "ip": "51.77.73.68",
         "anonymityLevel": "elite",
-        "asn": "AS201942",
+        "asn": "AS16276",
         "city": "Madrid",
         "country": "ES",
-        "created_at": "2024-03-28T07:58:06.004Z",
+        "created_at": "2022-09-11T10:13:08.728Z",
         "google": false,
-        "isp": "Soltia Consulting SL",
-        "latency": 26,
-        "org": "Next Coregen",
-        "port": "36366",
+        "isp": "OVH SAS",
+        "latency": 8,
+        "org": "Sastre Vazquez Antonio",
+        "port": "31979",
         "protocol": "socks4",
+        "responseTime": 211,
         "speed": 1,
-        "upTime": 98,
-        "updated_at": "2025-08-08T17:00:14.458Z",
-        "responseTime": 4419
+        "updated_at": "2025-08-08T16:45:36.362Z",
+        "upTime": 100
     },
     {
-        "ip": "185.18.250.85",
+        "ip": "185.18.250.34",
         "anonymityLevel": "elite",
         "asn": "AS209242",
         "city": "Madrid",
         "country": "ES",
-        "created_at": "2025-08-03T12:26:23.540Z",
+        "created_at": "2025-08-03T12:23:23.429Z",
         "google": false,
         "isp": "Cloudflare London, LLC",
-        "latency": 9,
+        "latency": 7,
         "org": "SR DC Mad1",
         "port": "80",
         "protocol": "http",
-        "speed": 14010,
+        "speed": 12908,
         "upTime": 100,
-        "updated_at": "2025-08-08T16:57:12.745Z",
-        "responseTime": 506
+        "updated_at": "2025-08-08T16:43:42.353Z",
+        "responseTime": 788
     },
     {
         "ip": "91.149.242.220",
@@ -52,5 +52,10 @@
         "upTime": 99,
         "updated_at": "2025-08-08T16:46:15.064Z",
         "responseTime": 3775
+    },
+    {
+        "ip": "90.162.35.34",
+        "port": "80",
+        "protocol": "http"
     }
 ]
