@@ -6694,16 +6694,11 @@
                   "geo2": null,
                   "res": null,
                   "lang": null
-                },
-                {
-                  "format": "m3u8",
-                  "url": "https://5924d3ad0efcf.streamlock.net:443/riojatv2/riojatv2live/playlist.m3u8",
-                  "geo2": null,
-                  "res": null,
-                  "lang": null
                 }
               ],
-              "extra_info": []
+              "extra_info": [
+                "UAG"
+              ]
             },
             {
               "name": "7 La Rioja",
@@ -12092,5 +12087,5 @@
       ]
     }
   ],
-  "updated": 1753915093
+  "updated": 1754411853
 }
