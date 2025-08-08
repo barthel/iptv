@@ -96,7 +96,7 @@ jobs:
           command: |
             sed -i 's/^\( *min_data_threshold = 1024\).*/\1/' IPTVChecker/IPTV_checker.py
             sed -i 's/^\( *\)capture_frame(/\1# capture_frame(/' IPTVChecker/IPTV_checker.py
-            sed -i "s/^\( *'ffmpeg', '-i', url, '-t', '\)5\(', '-f', 'null', '-'.*\)/\150\2/" IPTVChecker/IPTV_checker.py
+            # sed -i 's/headers=headers/proxies=\{\"http\" \: \"http:\/\/2.139.62.85:3128\", \"https\" \: \"https:\/\/2.139.62.85:3128\" \}/' IPTVChecker/IPTV_checker.py
             cat IPTVChecker/IPTV_checker.py
       - attach_workspace:
           at: tmp
