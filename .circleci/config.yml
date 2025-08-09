@@ -60,10 +60,6 @@ jobs:
       - run:
           name: copy M3U list to tmp/
           command: |
-            cp proxies.json tmp/
-      - run:
-          name: copy proxy list to tmp/
-          command: |
             cp *.m3u* tmp/
       - run:
           name: ls -al tmp/
@@ -78,6 +74,10 @@ jobs:
     executor: python/default
     steps:
       - setup
+      - run:
+          name: get endpoint information
+          command: |
+            curl -s "https://api.extractip.com/geolocate"
       - run:
           name: install ffmpeg
           command: |
