@@ -96,10 +96,14 @@ jobs:
           command: |
             sed -i 's/^\( *min_data_threshold = 1024\).*/\1/' IPTVChecker/IPTV_checker.py
             sed -i 's/^\( *\)capture_frame(/\1# capture_frame(/' IPTVChecker/IPTV_checker.py
-            # sed -i 's/headers=headers/proxies=\{\"http\" \: \"http:\/\/2.139.62.85:3128\", \"https\" \: \"https:\/\/2.139.62.85:3128\" \}/' IPTVChecker/IPTV_checker.py
             cat IPTVChecker/IPTV_checker.py
       - attach_workspace:
           at: tmp
+      - run:
+          name: get proxy list
+          command: |
+            curl "https://api.proxyscrape.com/v4/free-proxy-list/get?request=getproxies&protocol=socks4,socks5&timeout=10000&country=es&ssl=yes&anonymity=elite,anonymous&skip=0&limit=3" > tmp/proxies.lst
+            cat tmp/proxies.lst
       - run:
           name: check M3U list with IPTVChecker
           no_output_timeout: 1h
@@ -108,7 +112,7 @@ jobs:
             for file in *.m3u*; do
                 if [ -e "${file}" ]; then
                     echo "Verarbeite Datei: ${file}"
-                    time python ../IPTVChecker/IPTV_checker.py "${file}" -vv -timeout 30 -extended 15 -proxy-list proxies.json -test-geoblock -split
+                    time python ../IPTVChecker/IPTV_checker.py "${file}" -vv -timeout 30 -extended 15 -proxy-list proxies.lst -test-geoblock -split
                 fi
             done
             popd
