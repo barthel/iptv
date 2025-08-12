@@ -1,4 +1,5 @@
 version: 2.1
+
 orbs:
   python: circleci/python@3.1.0
   node: circleci/node@7.1.0
@@ -9,10 +10,10 @@ commands:
     steps:
       - checkout
       - run:
-          name: delete and create dist directory
+          name: delete and create dist and tmp directories
           command: |
-            rm -rf dist tmp
-            mkdir -p dist tmp
+            rm -rf dist tmp split
+            mkdir -p dist tmp split
       - jq/install
 
 workflows:
@@ -24,14 +25,28 @@ workflows:
               only: /.*/
           context:
             - "github"
-      - check:
+      # Neuer Job: check-split ersetzt den alten check-Job – Vorbereitung und Split der M3U Dateien
+      - check-split:
           requires:
             - build
           context:
             - "github"
+      # Neuer Job: check-process verarbeitet parallel die einzelnen Split-Teile
+      - check-process:
+          requires:
+            - check-split
+          context:
+            - "github"
+          # Hinweis: parallelism wurde aus dem Workflow-Block entfernt, da es in der Job-Definition definiert ist.
+      # Neuer Job: check-merge führt die Ergebnisse der parallelen Verarbeitung wieder zusammen
+      - check-merge:
+          requires:
+            - check-process
+          context:
+            - "github"
       - filter:
           requires:
-            - check
+            - check-merge
           context:
             - "github"
       - deploy:
@@ -66,14 +81,85 @@ jobs:
           command: |
             ls -al tmp/
       - persist_to_workspace:
-          root: tmp
+          root: .
           paths: 
-            - .
+            - tmp
+            - dist
+            - split
 
-  check:
+  # Neuer Job: check-split
+  # Dieser Job übernimmt Aspekte des ursprünglichen check-Jobs (z.B. Installationen, Klonen und Patchen von IPTVChecker)
+  # und zerlegt nun jede M3U Datei aus dem tmp/ Ordner in 10 Teile – das Format bleibt dabei erhalten.
+  check-split:
     executor: python/default
+    resource_class: small
     steps:
-      - setup
+      - checkout
+      - run:
+          name: clone IPTVChecker repository
+          command: |
+            git clone https://github.com/NewsGuyTor/IPTVChecker.git
+      - run:
+          name: patch/fix IPTVChecker
+          command: |
+            sed -i 's|^\( *min_data_threshold = 1024\).*|\1|' IPTVChecker/IPTV_checker.py
+            sed -i 's|^\( *\)capture_frame(|\1# capture_frame(|' IPTVChecker/IPTV_checker.py
+            sed -i "s|\('User-Agent': '\).*\('\)|\1Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:141.0) Gecko/20100101 Firefox/141.0\2|g" IPTVChecker/IPTV_checker.py
+            sed -i 's|\(resp\.iter_content(1024\) \* 500\()\)|\1\2|' IPTVChecker/IPTV_checker.py
+            cat IPTVChecker/IPTV_checker.py
+      - attach_workspace:
+          at: .
+          paths:
+            - tmp
+            - dist
+            - split
+      - run:
+          name: split each M3U file into 10 parts
+          command: |
+            mkdir -p split
+            # Wir gehen davon aus, dass alle *.m3u* Dateien im tmp/ Verzeichnis liegen.
+            # Das Skript split_m3u.sh muss so implementiert werden, dass es den Header (z.B. "#EXTM3U")
+            # beibehält und den Dateiformatstandard nicht zerstört.
+            for file in tmp/*.m3u*; do
+              if [ -e "${file}" ]; then
+                echo "Splitting file: ${file}"
+                # Das Skript erzeugt 10 Teile im Ordner split/ mit der Namenskonvention: _{0..9}_part_originalname
+                ./split_m3u.sh "${file}" 10 split/
+              fi
+            done
+      - run:
+          name: list split directory
+          command: |
+            ls -al split/
+      - run:
+          name: download proxy list
+          command: |
+            curl "https://api.proxyscrape.com/v4/free-proxy-list/get?request=getproxies&protocol=socks4,socks5&timeout=10000&country=de&ssl=yes&anonymity=elite,anonymous&skip=0&limit=3" > tmp/proxies.lst
+            cat tmp/proxies.lst
+      - persist_to_workspace:
+          root: .
+          paths: 
+            - tmp
+            - dist
+            - split
+            - IPTVChecker
+
+  # Neuer Job: check-process
+  # Dieser Job wird parallelisiert (parallelism ist in der Job-Definition deklariert).
+  # Jede parallele Instanz verarbeitet den jeweils ihr zugewiesenen Split-Teil.
+  check-process:
+    parallelism: 10
+    executor: python/default
+    resource_class: large
+    steps:
+      - checkout
+      - attach_workspace:
+          at: .
+          paths:
+            - tmp
+            - dist
+            - split
+            - IPTVChecker
       - run:
           name: get endpoint information
           command: |
@@ -84,70 +170,91 @@ jobs:
             sudo apt update
             sudo apt install ffmpeg
       - run:
-          name: clone IPTVChecker repository
-          command: |
-            git clone https://github.com/NewsGuyTor/IPTVChecker.git
-      - run:
-          name: install IPTVChecker
+          name: install IPTVChecker requirements
           command: |
             pip install -r IPTVChecker/requirements.txt
       - run:
-          name: patch/fix IPTVChecker
+          name: process assigned split parts with IPTVChecker
           command: |
-            sed -i 's|^\( *min_data_threshold = 1024\).*|\1|' IPTVChecker/IPTV_checker.py
-            sed -i 's|^\( *\)capture_frame(|\1# capture_frame(|' IPTVChecker/IPTV_checker.py
-            sed -i "s|\('User-Agent': '\).*\('\)|\1Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:141.0) Gecko/20100101 Firefox/141.0\2|g" IPTVChecker/IPTV_checker.py
-            sed -i 's|\(resp\.iter_content(1024\) \* 500\()\)|\1\2|' IPTVChecker/IPTV_checker.py
-            cat IPTVChecker/IPTV_checker.py
+            { pushd "split" > /dev/null; } 2>&1
+            # Jede parallele Instanz kennt ihre Nummer über CIRCLE_NODE_INDEX (0 bis 9).
+            # Für jede originale M3U Datei (_{0..9}_part_originalname) wird der dazugehörige Teil (mit Prefix _${CIRCLE_NODE_INDEX}_part_) verarbeitet.
+            for file in _${CIRCLE_NODE_INDEX}_part_*; do
+              if [ -f "${file}" ]; then
+                echo "Processing file: ${file}"
+                time python ../IPTVChecker/IPTV_checker.py "${file}" -vv -timeout 30 -extended 15 -proxy-list ../tmp/proxies.lst -test-geoblock -split
+              fi
+            done
+            { popd > /dev/null; } 2>&1
+      - run:
+          name: list processed files in split/
+          command: |
+            ls -al split/
+      - persist_to_workspace:
+          root: .
+          paths:
+            - dist
+            - split
+
+  # Neuer Job: check-merge
+  # Dieser Job führt die von den parallelen check-process Jobs verarbeiteten Teile wieder zusammen.
+  check-merge:
+    executor: python/default
+    resource_class: small
+    steps:
+      - checkout
       - attach_workspace:
-          at: tmp
+          at: .
+          paths:
+            - dist
+            - split
       - run:
-          name: get proxy list
+          name: list files in split/
           command: |
-            curl "https://api.proxyscrape.com/v4/free-proxy-list/get?request=getproxies&protocol=socks4,socks5&timeout=10000&country=es&ssl=yes&anonymity=elite,anonymous&skip=0&limit=3" > tmp/proxies.lst
-            cat tmp/proxies.lst
+            ls -al split/
       - run:
-          name: check M3U list with IPTVChecker
-          no_output_timeout: 1h
+          name: merge processed split parts into final M3U files
           command: |
-            pushd tmp/
-            for file in *.m3u*; do
-                if [ -e "${file}" ]; then
-                    echo "Verarbeite Datei: ${file}"
-                    time python ../IPTVChecker/IPTV_checker.py "${file}" -vv -timeout 30 -extended 15 -proxy-list proxies.lst -test-geoblock -split
-                fi
+            mkdir -p dist
+            # Durchsuche das Verzeichnis "split" nach Dateien, die "_working" enthalten.
+            # Das Sed-Muster extrahiert den Originalnamen inkl. Dateiendung.
+            for orig in $(ls split | grep '_working' | sed -E 's/^_[0-9]_part_(.*)_working(\.m3u8?)/\1\2/' | sort | uniq); do
+              # Verwende find, um alle zum aktuellen orig passenden Dateien zu ermitteln.
+              files=$(find split -maxdepth 1 -type f -name "_*_part_${orig%.*}_working*.m3u*" | sort -V)
+              
+              # Falls keine Dateien gefunden wurden, überspringe die Iteration.
+              if [ -z "${files}" ]; then
+                echo "Keine Dateien gefunden für ${orig}, überspringe..."
+                continue
+              fi
+
+              echo "Merging parts for ${orig}"
+              # Schreibe den Header in die Zieldatei
+              echo "#EXTM3U" > dist/"${orig}"
+
+              # Füge die Inhalte der Teile-Dateien hinzu, entferne dabei alle Zeilen, die exakt "EXTM3U" sind.
+              for file in $files; do
+                sed '/^#EXTM3U.*$/d' "$file" >> dist/"${orig}"
+              done
             done
-            popd
       - run:
-          name: ls -al tmp/
-          command: |
-            ls -al tmp/
-      - run:
-          name: rename and copy working M3U lists to dist
-          command: |
-            pushd tmp/
-            find . -type f -name "*_working.m3u*" | while read _file; do
-              _newfile=$(echo "${_file}" | sed 's/_working//')
-              echo "copy: ${_file} to: ../dist/${_newfile}"
-              cp -f "${_file}" "../dist/${_newfile}"
-            done
-            popd
-      - run:
-          name: ls -al dist/
+          name: list final files in dist/
           command: |
             ls -al dist/
       - persist_to_workspace:
-          root: dist
-          paths: 
-            - .
+          root: .
+          paths:
+            - dist
 
   filter:
     executor: python/default
     resource_class: small
     steps:
-      - setup
+      - checkout
       - attach_workspace:
-          at: dist
+          at: .
+          paths:
+            - dist
       - run:
           name: ls -al dist/
           command: |
@@ -155,19 +262,19 @@ jobs:
       - run:
           name: filter M3U list
           command: |
-            pushd dist/
+            { pushd "dist" > /dev/null; } 2>&1
             time python ../filter_white_whitelist_m3u8.py
-            popd
+            { popd > /dev/null; } 2>&1
           environment:
             WHITELIST_DIR: ..
       - run:
-          name: ls -al dist/
+          name: ls -al dist/ after filtering
           command: |
             ls -al dist/
       - persist_to_workspace:
-          root: dist
-          paths: 
-            - .
+          root: .
+          paths:
+            - dist
 
   deploy:
     executor: node/default
@@ -175,7 +282,9 @@ jobs:
     steps:
       - checkout
       - attach_workspace:
-          at: dist
+          at: .
+          paths:
+            - dist
       - run:
           name: install gh-pages
           command: |
@@ -189,7 +298,7 @@ jobs:
           fingerprints:
             - "05:c0:0c:2f:f7:ac:a6:db:53:a6:04:8f:64:3a:c0:84"
       - run:
-          name: ls -al dist/
+          name: ls -al dist/ before deploy
           command: |
             ls -al dist/
       - run:
