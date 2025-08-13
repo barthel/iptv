@@ -1,5 +1,0 @@
-#EXTM3U
-#EXTINF:-1 tvg-id="101Malaga.TV" tvg-name="101TV Málaga" tvg-logo="https://graph.facebook.com/101tvmalaga/picture?width=200&height=200" group-title="Andalucía", 101TV Málaga
-https://liveingesta318.cdnmedia.tv/101televisionlive/smil:rtmp01.smil/playlist.m3u8?DVR
-#EXTINF:-1 tvg-id="null" tvg-name="PTV Málaga" tvg-logo="https://graph.facebook.com/PTVMalaga/picture?width=200&height=200" group-title="Andalucía", PTV Málaga
-https://streamer.zapitv.com/PTV-malaga/index.m3u8

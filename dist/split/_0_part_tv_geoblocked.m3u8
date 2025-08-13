@@ -1,9 +1,0 @@
-#EXTM3U
-#EXTINF:-1 tvg-id="E3.TV" tvg-name="Esport 3" tvg-logo="https://graph.facebook.com/Esport3/picture?width=200&height=200" group-title="Deportivos", Esport 3
-https://directes-tv-cat.3catdirectes.cat/live-origin/esport3-hls/master.m3u8
-#EXTINF:-1 tvg-id="E3.TV" tvg-name="Esport 3 [1]" tvg-logo="https://graph.facebook.com/Esport3/picture?width=200&height=200" group-title="Deportivos", Esport 3
-https://directes-tv-es.3catdirectes.cat/live-origin/esport3-hls/master.m3u8
-#EXTINF:-1 tvg-id="SX3.TV" tvg-name="SX3" tvg-logo="https://graph.facebook.com/SomSX3/picture?width=200&height=200" group-title="Infantiles", SX3
-https://directes-tv-cat.3catdirectes.cat/live-content/super3-hls/master.m3u8
-#EXTINF:-1 tvg-id="SX3.TV" tvg-name="SX3 [1]" tvg-logo="https://graph.facebook.com/SomSX3/picture?width=200&height=200" group-title="Infantiles", SX3
-https://directes-tv-es.3catdirectes.cat/live-content/super3-hls/master.m3u8
