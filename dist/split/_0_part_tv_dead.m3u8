@@ -7,8 +7,6 @@ https://rtvelivestream.rtve.es/rtvesec/la1/la1_main_dvr.m3u8
 https://d2jws8nf49xuk0.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-3ikffw175xm6u/La1ES.m3u8
 #EXTINF:-1 tvg-id="La2.TV" tvg-name="La 2" tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_kqgHWySi5xprs1VFCNCX0IKNT8yXBLZC43JMoB8j0JUto=s200" group-title="Generalistas", La 2
 https://ztnr.rtve.es/ztnr/1688885.m3u8
-#EXTINF:-1 tvg-id="La2.TV" tvg-name="La 2 [1]" tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_kqgHWySi5xprs1VFCNCX0IKNT8yXBLZC43JMoB8j0JUto=s200" group-title="Generalistas", La 2
-https://rtvelivestream.rtve.es/rtvesec/la2/la2_main_dvr.m3u8
 #EXTINF:-1 tvg-id="Cuatro.TV" tvg-name="Cuatro" tvg-logo="https://graph.facebook.com/cuatro/picture?width=200&height=200" group-title="Generalistas", Cuatro
 http://185.189.225.150:85/CuatroHD/index.m3u8
 #EXTINF:-1 tvg-id="Telecinco.TV" tvg-name="Telecinco" tvg-logo="https://graph.facebook.com/tele5/picture?width=200&height=200" group-title="Generalistas", Telecinco

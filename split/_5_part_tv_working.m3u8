@@ -9,14 +9,10 @@ https://streamingtvi.gestec-video.com/hls/unesd.m3u8
 https://limited43.todostreaming.es/live/simbana-livestream.m3u8
 #EXTINF:-1 tvg-id="Extremadura.TV" tvg-name="Canal Extremadura" tvg-logo="https://graph.facebook.com/CanalExtremadura/picture?width=200&height=200" group-title="Extremadura", Canal Extremadura
 https://canalextremadura-live.flumotion.cloud/canalextremadura/live_all/playlist_dvr.m3u8
-#EXTINF:-1 tvg-id="TVGAL.TV" tvg-name="TVG" tvg-logo="https://graph.facebook.com/CRTVG/picture?width=200&height=200" group-title="Galicia", TVG
-https://crtvg-europa.flumotion.cloud/playlist.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="TVG Eventos" tvg-logo="https://graph.facebook.com/CRTVG/picture?width=200&height=200" group-title="Galicia", TVG Eventos
 https://crtvg-events1.flumotion.cloud/playlist.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="TVG Eventos [1]" tvg-logo="https://graph.facebook.com/CRTVG/picture?width=200&height=200" group-title="Galicia", TVG Eventos
 https://crtvg-events2.flumotion.cloud/playlist.m3u8
-#EXTINF:-1 tvg-id="null" tvg-name="TVG Eventos [2]" tvg-logo="https://graph.facebook.com/CRTVG/picture?width=200&height=200" group-title="Galicia", TVG Eventos
-https://crtvg-events3.flumotion.cloud/playlist.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="TVG Mira Radio Galega" tvg-logo="https://graph.facebook.com/CRTVG/picture?width=200&height=200" group-title="Galicia", TVG Mira Radio Galega
 https://crtvg-mirarg-schlive.flumotion.cloud/crtvglive/smil:channel1PRG.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="TeleVigo" tvg-logo="https://graph.facebook.com/televigo/picture?width=200&height=200" group-title="Galicia", TeleVigo
