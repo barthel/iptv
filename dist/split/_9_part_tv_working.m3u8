@@ -1,10 +1,14 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="null" tvg-name="Power TV Turquía" tvg-logo="https://graph.facebook.com/powerapp/picture?width=200&height=200" group-title="Musicales", Power TV Turquía
+https://livetv.powerapp.com.tr/powerTV/powerhd.smil/playlists.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Sky Folk Macedonia" tvg-logo="https://graph.facebook.com/skyfolk.mk/picture?width=200&height=200" group-title="Musicales", Sky Folk Macedonia
 https://eu.live.skyfolk.mk/live.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="1Muz Bielorrusia" tvg-logo="https://graph.facebook.com/onemusicchannel/picture?width=200&height=200" group-title="Musicales", 1Muz Bielorrusia
 http://hz1.teleport.cc/HLS/HD.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="1Muz Bielorrusia [1]" tvg-logo="https://graph.facebook.com/onemusicchannel/picture?width=200&height=200" group-title="Musicales", 1Muz Bielorrusia
 http://hz1.teleport.cc/HLS/SD.m3u8
+#EXTINF:-1 tvg-id="null" tvg-name="RU.TV Rusia" tvg-logo="https://yt3.ggpht.com/NRCQpVxbetuJyjtPjotQ4H7rq3nfFm0J2VEc2aBs7XQV7-lBFqZMfu2tGZNGOfl7TPPdQjCMxQ=s200" group-title="Musicales", RU.TV Rusia
+https://hls-03-video.webcaramba.com/rutv/live.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Dance TV Estonia" tvg-logo="https://pbs.twimg.com/profile_images/1268129322730127364/OJlQBZpS_200x200.jpg" group-title="Musicales", Dance TV Estonia
 https://m1b2.worldcast.tv/dancetelevisionone/2/dancetelevisionone.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Dance TV Estonia [1]" tvg-logo="https://pbs.twimg.com/profile_images/1268129322730127364/OJlQBZpS_200x200.jpg" group-title="Musicales", Dance TV Estonia

@@ -5,12 +5,8 @@ https://5ce9406b73c33.streamlock.net/ONFM/livestream/master.m3u8
 https://5c389faa13be3.streamlock.net:9553/onweb/live/playlist.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Retro Music TV Chequia" tvg-logo="https://graph.facebook.com/retromusic/picture?width=200&height=200" group-title="Musicales", Retro Music TV Chequia
 http://stream.mediawork.cz/retrotv/retrotvHQ1/playlist.m3u8
-#EXTINF:-1 tvg-id="null" tvg-name="Power TV Turquía" tvg-logo="https://graph.facebook.com/powerapp/picture?width=200&height=200" group-title="Musicales", Power TV Turquía
-https://livetv.powerapp.com.tr/powerTV/powerhd.smil/playlists.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="CMC Croacia" tvg-logo="https://graph.facebook.com/CroatianMusicChannel/picture?width=200&height=200" group-title="Musicales", CMC Croacia
 https://stream.cmctv.hr:49998/cmc/live.m3u8
-#EXTINF:-1 tvg-id="null" tvg-name="RU.TV Rusia" tvg-logo="https://yt3.ggpht.com/NRCQpVxbetuJyjtPjotQ4H7rq3nfFm0J2VEc2aBs7XQV7-lBFqZMfu2tGZNGOfl7TPPdQjCMxQ=s200" group-title="Musicales", RU.TV Rusia
-https://hls-03-video.webcaramba.com/rutv/live.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Muzzik TV Serbia" tvg-logo="https://graph.facebook.com/muzzik.television/picture?width=200&height=200" group-title="Musicales", Muzzik TV Serbia
 https://muzzik-live.morescreens.com/mts-6/playlist.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Muzzik Rock&Roll Serbia" tvg-logo="https://graph.facebook.com/muzzik.television/picture?width=200&height=200" group-title="Musicales", Muzzik Rock&Roll Serbia

@@ -1,4 +1,6 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="null" tvg-name="Piera TV" tvg-logo="https://yt3.ggpht.com/Yo_LIch5OT5hTA24FMlshk7MtHpuUbVoOd8U2HJGw6el7-cCkAhH8_ISKmww17wHn37FCOF_rg=s200" group-title="Cataluña", Piera TV
+https://5d776b1861da1.streamlock.net/piera/smil:piera.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Mar TV" tvg-logo="https://graph.facebook.com/martelevisio/picture?width=200&height=200" group-title="Cataluña", Mar TV
 https://rfe-ingest.akamaized.net/hls/live/2033043/tvmc05/master.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="3CAT Càmeres del temps" tvg-logo="https://graph.facebook.com/som3Cat/picture?width=200&height=200" group-title="Cataluña", 3CAT Càmeres del temps
