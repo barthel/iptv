@@ -29,8 +29,6 @@ https://www.streaming101tv.es:19360/ronda/ronda.m3u8
 http://37.130.151.51/hls1/cancionero.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Canal 25 Barbastro TV" tvg-logo="https://graph.facebook.com/tvbarbastro/picture?width=200&height=200" group-title="Aragón", Canal 25 Barbastro TV
 https://limited49.todostreaming.es/live/tvbarbastro-livestream.m3u8
-#EXTINF:-1 tvg-id="La2_CAN.TV" tvg-name="La 2 Canarias" tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_kqgHWySi5xprs1VFCNCX0IKNT8yXBLZC43JMoB8j0JUto=s200" group-title="Canarias", La 2 Canarias
-https://ztnr.rtve.es/ztnr/5468585.m3u8
 #EXTINF:-1 tvg-id="24H_CAN.TV" tvg-name="24h Canarias" tvg-logo="https://pbs.twimg.com/profile_images/1634293543987453954/mb1Rzmso_200x200.jpg" group-title="Canarias", 24h Canarias
 https://ztnr.rtve.es/ztnr/5473142.m3u8
 #EXTINF:-1 tvg-id="MirameTV.TV" tvg-name="Mírame TV" tvg-logo="https://graph.facebook.com/mirametvcom/picture?width=200&height=200" group-title="Canarias", Mírame TV

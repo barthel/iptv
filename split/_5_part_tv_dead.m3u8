@@ -1,12 +1,8 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="null" tvg-name="Corts Valencianes" tvg-logo="https://graph.facebook.com/cortsval/picture?width=200&height=200" group-title="C. Valenciana", Corts Valencianes
 https://streamserver3.seneca.tv/cval_live/cdn_enc_3/master.m3u8
-#EXTINF:-1 tvg-id="TVGAL.TV" tvg-name="TVG" tvg-logo="https://graph.facebook.com/CRTVG/picture?width=200&height=200" group-title="Galicia", TVG
-https://crtvg-europa.flumotion.cloud/playlist.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="TVG Xabarin" tvg-logo="https://graph.facebook.com/oxabarinclub/picture?width=200&height=200" group-title="Galicia", TVG Xabarin
 https://crtvg-infantil-schlive.flumotion.cloud/crtvglive/smil:channel5PRG.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="null" tvg-name="TVG Eventos [2]" tvg-logo="https://graph.facebook.com/CRTVG/picture?width=200&height=200" group-title="Galicia", TVG Eventos
-https://crtvg-events3.flumotion.cloud/playlist.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Corenta anos da TVG" tvg-logo="https://graph.facebook.com/CRTVG/picture?width=200&height=200" group-title="Galicia", Corenta anos da TVG
 https://crtvg-40-anos-crtvg-schlive.flumotion.cloud/crtvglive/smil:channel9PRG.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="TV Ferrol" tvg-logo="https://graph.facebook.com/tvferrol/picture?width=200&height=200" group-title="Galicia", TV Ferrol

@@ -7,12 +7,16 @@ https://ingest2-video.streaming-pro.com/votv/streaming_web/playlist.m3u8
 https://ingest1-video.streaming-pro.com/canaltaronja/osona/playlist.m3u8
 #EXTINF:-1 tvg-id="Xarxa_TV_Girona.TV" tvg-name="TV de Girona" tvg-logo="https://graph.facebook.com/tvgirona/picture?width=200&height=200" group-title="Cataluña", TV de Girona
 https://ventdelnord.tv:8080/girona/directe.m3u8
+#EXTINF:-1 tvg-id="null" tvg-name="Piera TV" tvg-logo="https://yt3.ggpht.com/Yo_LIch5OT5hTA24FMlshk7MtHpuUbVoOd8U2HJGw6el7-cCkAhH8_ISKmww17wHn37FCOF_rg=s200" group-title="Cataluña", Piera TV
+https://5d776b1861da1.streamlock.net/piera/smil:piera.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Xarxa_Canal_10_Emporda.TV" tvg-name="Canal 10 Empordà" tvg-logo="https://graph.facebook.com/canal10emporda/picture?width=200&height=200" group-title="Cataluña", Canal 10 Empordà
 https://ventdelnord.tv:8080/escala/directe.m3u8
 #EXTINF:-1 tvg-id="Xarxa_TV_Sabadell_Valles.TV" tvg-name="TV Sabadell Vallès" tvg-logo="https://graph.facebook.com/tvsabadellvalles/picture?width=200&height=200" group-title="Cataluña", TV Sabadell Vallès
 https://ingest1-video.streaming-pro.com/canaltaronja/sabadell/playlist.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Fitel Television" tvg-logo="https://graph.facebook.com/FitelTelevision/picture?width=200&height=200" group-title="Cataluña", Fitel Television
 https://tv.mywifisocial.es/live.m3u8
+#EXTINF:-1 tvg-id="Telemadrid.TV" tvg-name="Telemadrid" tvg-logo="https://graph.facebook.com/telemadrid/picture?width=200&height=200" group-title="C. de Madrid", Telemadrid
+https://telemadrid-23-secure2.akamaized.net/master.m3u8
 #EXTINF:-1 tvg-id="Telemadrid.TV" tvg-name="Telemadrid [3]" tvg-logo="https://graph.facebook.com/telemadrid/picture?width=200&height=200" group-title="C. de Madrid", Telemadrid
 https://eventos-23-secure2.akamaized.net/eventos_3-hls/master.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Teleganés" tvg-logo="https://graph.facebook.com/1423419417957760/picture?width=200&height=200" group-title="C. de Madrid", Teleganés

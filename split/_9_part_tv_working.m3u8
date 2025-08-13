@@ -1,4 +1,6 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="null" tvg-name="Power TV Turquía" tvg-logo="https://graph.facebook.com/powerapp/picture?width=200&height=200" group-title="Musicales", Power TV Turquía
+https://livetv.powerapp.com.tr/powerTV/powerhd.smil/playlists.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Sky Folk Macedonia" tvg-logo="https://graph.facebook.com/skyfolk.mk/picture?width=200&height=200" group-title="Musicales", Sky Folk Macedonia
 https://eu.live.skyfolk.mk/live.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="1Muz Bielorrusia" tvg-logo="https://graph.facebook.com/onemusicchannel/picture?width=200&height=200" group-title="Musicales", 1Muz Bielorrusia

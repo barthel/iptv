@@ -5,8 +5,6 @@ https://live.kh.malimarcdn.com/live/tvk.stream/playlist.m3u8
 https://live.kh.malimarcdn.com/live/tvk2.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="RTHK 31 32 Hong Kong" tvg-logo="https://graph.facebook.com/RTHK.HK/picture?width=200&height=200" group-title="Int. Asia", RTHK 31 32 Hong Kong
 https://www.rthk.hk/feeds/dtt/rthktv31_https.m3u8
-#EXTINF:-1 tvg-id="null" tvg-name="RTHK 31 32 Hong Kong [1]" tvg-logo="https://graph.facebook.com/RTHK.HK/picture?width=200&height=200" group-title="Int. Asia", RTHK 31 32 Hong Kong
-https://www.rthk.hk/feeds/dtt/rthktv32_https.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Teledifusão de Macau" tvg-logo="https://graph.facebook.com/Canal.Macau/picture?width=200&height=200" group-title="Int. Asia", Teledifusão de Macau
 https://live5.tdm.com.mo/ch2/ch2.live/playlist.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Teledifusão de Macau [1]" tvg-logo="https://graph.facebook.com/Canal.Macau/picture?width=200&height=200" group-title="Int. Asia", Teledifusão de Macau
@@ -29,5 +27,3 @@ https://streamtv2.elitecomunicacion.cloud:3144/live/verbenatvlive.m3u8
 https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/broadcast_5c9e17cd59e8b.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Kronehit Austria" tvg-logo="https://graph.facebook.com/kronehit/picture?width=200&height=200" group-title="Musicales", Kronehit Austria
 https://bitcdn-kronehit.bitmovin.com/v2/hls/playlist.m3u8
-#EXTINF:-1 tvg-id="null" tvg-name="QMusic Holanda" tvg-logo="https://graph.facebook.com/QmusicNL/picture?width=200&height=200" group-title="Musicales", QMusic Holanda
-https://dpp-qmusicnl-live.akamaized.net/streamx/QmusicNL.m3u8

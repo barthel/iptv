@@ -45,5 +45,7 @@ https://cartv.streaming.aranova.es/hls/live/aragontv_canal1.m3u8
 https://cartv-streaming.aranova.es/hls/live/anoticias_canal3.m3u8
 #EXTINF:-1 tvg-id="La1_CAN.TV" tvg-name="La 1 Canarias" tvg-logo="https://pbs.twimg.com/profile_images/1921959108862709760/fe5Tqhlh_200x200.jpg" group-title="Canarias", La 1 Canarias
 https://ztnr.rtve.es/ztnr/5190066.m3u8
+#EXTINF:-1 tvg-id="La2_CAN.TV" tvg-name="La 2 Canarias" tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_kqgHWySi5xprs1VFCNCX0IKNT8yXBLZC43JMoB8j0JUto=s200" group-title="Canarias", La 2 Canarias
+https://ztnr.rtve.es/ztnr/5468585.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Lancelot TV" tvg-logo="https://graph.facebook.com/LancelotTelevision/picture?width=200&height=200" group-title="Canarias", Lancelot TV
 https://5c0956165db0b.streamlock.net:8090/directo/_definst_/lancelot.television/master.m3u8

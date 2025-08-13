@@ -1,12 +1,8 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="null" tvg-name="Piera TV" tvg-logo="https://yt3.ggpht.com/Yo_LIch5OT5hTA24FMlshk7MtHpuUbVoOd8U2HJGw6el7-cCkAhH8_ISKmww17wHn37FCOF_rg=s200" group-title="Cataluña", Piera TV
-https://5d776b1861da1.streamlock.net/piera/smil:piera.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Mar TV" tvg-logo="https://graph.facebook.com/martelevisio/picture?width=200&height=200" group-title="Cataluña", Mar TV
 https://rfe-ingest.akamaized.net/hls/live/2033043/tvmc05/master.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="3CAT Càmeres del temps" tvg-logo="https://graph.facebook.com/som3Cat/picture?width=200&height=200" group-title="Cataluña", 3CAT Càmeres del temps
 https://directes-tv-int.3catdirectes.cat/live-content/beauties-hls/master.m3u8
-#EXTINF:-1 tvg-id="Telemadrid.TV" tvg-name="Telemadrid" tvg-logo="https://graph.facebook.com/telemadrid/picture?width=200&height=200" group-title="C. de Madrid", Telemadrid
-https://telemadrid-23-secure2.akamaized.net/master.m3u8
 #EXTINF:-1 tvg-id="Telemadrid.TV" tvg-name="Telemadrid [1]" tvg-logo="https://graph.facebook.com/telemadrid/picture?width=200&height=200" group-title="C. de Madrid", Telemadrid
 https://eventos-23-secure2.akamaized.net/eventos_1-hls/master.m3u8
 #EXTINF:-1 tvg-id="Telemadrid.TV" tvg-name="Telemadrid [2]" tvg-logo="https://graph.facebook.com/telemadrid/picture?width=200&height=200" group-title="C. de Madrid", Telemadrid
