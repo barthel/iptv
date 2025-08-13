@@ -25,8 +25,6 @@ https://server40.servistreaming.com:3477/stream/play.m3u8
 https://30a-tv.com/feeds/ceftech/30atvmusic.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Ditty TV USA" tvg-logo="https://graph.facebook.com/DittyTV/picture?width=200&height=200" group-title="Musicales", Ditty TV USA
 https://0ba805a2403b4660bbb05c0a210ebbdc.mediatailor.us-east-1.amazonaws.com/v1/master/04fd913bb278d8775298c26fdca9d9841f37601f/ONO_DittyTV/playlist.m3u8
-#EXTINF:-1 tvg-id="null" tvg-name="California Music Channel USA" tvg-logo="https://graph.facebook.com/CaliforniaMusicChannel/picture?width=200&height=200" group-title="Musicales", California Music Channel USA
-https://cmc-ono.amagi.tv/hls/amagi_hls_data_cmcAAAAAA-cmc-ono/CDN/playlist.m3u8?device=TDTChannels
 #EXTINF:-1 tvg-id="null" tvg-name="Spirit TV USA" tvg-logo="https://graph.facebook.com/MySpirittv/picture?width=200&height=200" group-title="Musicales", Spirit TV USA
 https://cdnlive.myspirit.tv/LS-ATL-43240-2/index.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Solidaria TV España" tvg-logo="https://graph.facebook.com/solidariatv/picture?width=200&height=200" group-title="Religiosos", Solidaria TV España

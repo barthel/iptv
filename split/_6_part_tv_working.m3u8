@@ -17,6 +17,8 @@ https://d3749synfikwkv.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68
 https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/index.m3u8
 #EXTINF:-1 tvg-id="DW.TV" tvg-name="DW Alemania [1]" tvg-logo="https://graph.facebook.com/dw.espanol/picture?width=200&height=200" group-title="Int. Europa", DW Alemania
 https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8
+#EXTINF:-1 tvg-id="null" tvg-name="Das Erste Alemania" tvg-logo="https://graph.facebook.com/DasErste/picture?width=200&height=200" group-title="Int. Europa", Das Erste Alemania
+https://daserste-live.ard-mcdn.de/daserste/live/hls/int/master.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="WDR Alemania" tvg-logo="https://graph.facebook.com/WDR/picture?width=200&height=200" group-title="Int. Europa", WDR Alemania
 https://wdrfsww247.akamaized.net/hls/live/2009628/wdr_msl4_fs247ww/master.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="NDR Niedersachsen Alemania" tvg-logo="https://graph.facebook.com/ndrniedersachsen/picture?width=200&height=200" group-title="Int. Europa", NDR Niedersachsen Alemania

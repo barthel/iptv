@@ -3,8 +3,6 @@
 https://livesg1.rtva.hiway.media/424b27f3-a9c7-4b01-9f79-59997561a62c/manifest.m3u8
 #EXTINF:-1 tvg-id="DW.TV" tvg-name="DW Alemania [2]" tvg-logo="https://graph.facebook.com/dw.espanol/picture?width=200&height=200" group-title="Int. Europa", DW Alemania
 https://dwamdstream106.akamaized.net/hls/live/2017965/dwstream106/index.m3u8
-#EXTINF:-1 tvg-id="null" tvg-name="Das Erste Alemania" tvg-logo="https://graph.facebook.com/DasErste/picture?width=200&height=200" group-title="Int. Europa", Das Erste Alemania
-https://daserste-live.ard-mcdn.de/daserste/live/hls/int/master.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="RTCG SAT Montenegro" tvg-logo="https://graph.facebook.com/RTCG.me/picture?width=200&height=200" group-title="Int. Europa", RTCG SAT Montenegro
 https://proxysat.ipradio.rs:1936/rtcg/smil:rtcg.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="San Marino RTV [1]" tvg-logo="https://graph.facebook.com/SanMarinoRTV/picture?width=200&height=200" group-title="Int. Europa", San Marino RTV
