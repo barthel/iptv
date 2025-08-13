@@ -1,0 +1,61 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="null" tvg-name="Ciudades Del Ocio TV" tvg-logo="https://graph.facebook.com/CiudadesDelOcioTV/picture?width=200&height=200" group-title="C. Valenciana", Ciudades Del Ocio TV
+https://cloudvideo.servers10.com:8081/8024/index.m3u8
+#EXTINF:-1 tvg-id="null" tvg-name="Onda Valencia" tvg-logo="https://graph.facebook.com/ondavalenciatv/picture?width=200&height=200" group-title="C. Valenciana", Onda Valencia
+https://cloudvideo.servers10.com:8081/8116/index.m3u8
+#EXTINF:-1 tvg-id="null" tvg-name="Une Vinalopó" tvg-logo="https://graph.facebook.com/UneVinalopo/picture?width=200&height=200" group-title="C. Valenciana", Une Vinalopó
+https://streamingtvi.gestec-video.com/hls/unesd.m3u8
+#EXTINF:-1 tvg-id="null" tvg-name="33TV Valencia" tvg-logo="https://karyganet.com/wp-content/uploads/tv-33.jpg" group-title="C. Valenciana", 33TV Valencia
+https://limited43.todostreaming.es/live/simbana-livestream.m3u8
+#EXTINF:-1 tvg-id="Extremadura.TV" tvg-name="Canal Extremadura" tvg-logo="https://graph.facebook.com/CanalExtremadura/picture?width=200&height=200" group-title="Extremadura", Canal Extremadura
+https://canalextremadura-live.flumotion.cloud/canalextremadura/live_all/playlist_dvr.m3u8
+#EXTINF:-1 tvg-id="TVGAL.TV" tvg-name="TVG" tvg-logo="https://graph.facebook.com/CRTVG/picture?width=200&height=200" group-title="Galicia", TVG
+https://crtvg-europa.flumotion.cloud/playlist.m3u8
+#EXTINF:-1 tvg-id="null" tvg-name="TVG Eventos" tvg-logo="https://graph.facebook.com/CRTVG/picture?width=200&height=200" group-title="Galicia", TVG Eventos
+https://crtvg-events1.flumotion.cloud/playlist.m3u8
+#EXTINF:-1 tvg-id="null" tvg-name="TVG Eventos [1]" tvg-logo="https://graph.facebook.com/CRTVG/picture?width=200&height=200" group-title="Galicia", TVG Eventos
+https://crtvg-events2.flumotion.cloud/playlist.m3u8
+#EXTINF:-1 tvg-id="null" tvg-name="TVG Eventos [2]" tvg-logo="https://graph.facebook.com/CRTVG/picture?width=200&height=200" group-title="Galicia", TVG Eventos
+https://crtvg-events3.flumotion.cloud/playlist.m3u8
+#EXTINF:-1 tvg-id="null" tvg-name="TVG Mira Radio Galega" tvg-logo="https://graph.facebook.com/CRTVG/picture?width=200&height=200" group-title="Galicia", TVG Mira Radio Galega
+https://crtvg-mirarg-schlive.flumotion.cloud/crtvglive/smil:channel1PRG.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="null" tvg-name="TeleVigo" tvg-logo="https://graph.facebook.com/televigo/picture?width=200&height=200" group-title="Galicia", TeleVigo
+https://stream-us-east-1.getpublica.com/playlist.m3u8?cb=[CACHEBUSTER]&network_id=16113&live=1&avod=0&hls_marker=1&position=preroll&pod_duration=120&app_bundle=com.streamingconnect.viva&app_domain=mirametv.live&app_category=linear_tv&ssai_enabled=1&content_cat=IAB1&content_channel=televigo&content_genre=tv_broadcaster&content_network=streamingconnect&content_rating=TV-G&us_privacy=[US_PRIVACY]&gdpr=[GDPR]&ifa_type=[IFA_TYPE]&min_ad_duration=6&max_ad_duration=120&content_id=[CONTENT_ID]
+#EXTINF:-1 tvg-id="null" tvg-name="Telemiño" tvg-logo="https://graph.facebook.com/teleminho/picture?width=200&height=200" group-title="Galicia", Telemiño
+https://laregionlive.flumotion.cloud/laregionlive/smil:channel1.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="null" tvg-name="TEF" tvg-logo="https://graph.facebook.com/TEFTV/picture?width=200&height=200" group-title="Illes Balears", TEF
+https://tef.servertv.online:3268/live/teflive.m3u8
+#EXTINF:-1 tvg-id="null" tvg-name="Canal 4 TV Mallorca" tvg-logo="https://graph.facebook.com/GRUP4COM/picture?width=200&height=200" group-title="Illes Balears", Canal 4 TV Mallorca
+https://limited35.todostreaming.es/live/mitjans-livestream1.m3u8
+#EXTINF:-1 tvg-id="null" tvg-name="SAM Ibiza" tvg-logo="https://graph.facebook.com/SAMibizaradio/picture?width=200&height=200" group-title="Illes Balears", SAM Ibiza
+https://hls1.eu.peppermindmedia.com/av:vod1/SAMibiza/index.fmp4.m3u8
+#EXTINF:-1 tvg-id="null" tvg-name="Cocina Familiar" tvg-logo="https://graph.facebook.com/cocinafamiliarjr/picture?width=200&height=200" group-title="La Rioja", Cocina Familiar
+https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=12108&live=1
+#EXTINF:-1 tvg-id="ETB1.TV" tvg-name="ETB 1" tvg-logo="https://graph.facebook.com/eitb/picture?width=200&height=200" group-title="País Vasco", ETB 1
+https://multimedia.eitb.eus/live-content/etb1hd-hls/master.m3u8
+#EXTINF:-1 tvg-id="ETB2.TV" tvg-name="ETB 2" tvg-logo="https://graph.facebook.com/eitb/picture?width=200&height=200" group-title="País Vasco", ETB 2
+https://multimedia.eitb.eus/live-content/etb2hd-hls/master.m3u8
+#EXTINF:-1 tvg-id="null" tvg-name="ETB Eventos 1" tvg-logo="https://graph.facebook.com/eitb/picture?width=200&height=200" group-title="País Vasco", ETB Eventos 1
+https://multimedia.eitb.eus/live-content/oka1hd-hls/master.m3u8
+#EXTINF:-1 tvg-id="null" tvg-name="Tele 7" tvg-logo="https://graph.facebook.com/Tele7Radio7/picture?width=200&height=200" group-title="País Vasco", Tele 7
+https://ingest2-video.streaming-pro.com/tele7_ABR/stream/playlist.m3u8
+#EXTINF:-1 tvg-id="null" tvg-name="Goiena Eus" tvg-logo="https://graph.facebook.com/goiena.eus/picture?width=200&height=200" group-title="País Vasco", Goiena Eus
+https://zuzenean.goienamedia.eus/goiena-telebista.m3u8
+#EXTINF:-1 tvg-id="null" tvg-name="Goierri Irrati TV" tvg-logo="https://graph.facebook.com/GoierriIrratiTelebista/picture?width=200&height=200" group-title="País Vasco", Goierri Irrati TV
+https://streaming.gitb.eus/hls/z.m3u8
+#EXTINF:-1 tvg-id="null" tvg-name="28 Kanala" tvg-logo="https://graph.facebook.com/28kanala/picture?width=200&height=200" group-title="País Vasco", 28 Kanala
+https://streaming.28kanala.eus/hls/z.m3u8
+#EXTINF:-1 tvg-id="null" tvg-name="GUKA TB" tvg-logo="https://graph.facebook.com/guka.eus/picture?width=200&height=200" group-title="País Vasco", GUKA TB
+https://streaming.ukt.eus/hls/test.m3u8
+#EXTINF:-1 tvg-id="null" tvg-name="Oizmendi TV" tvg-logo="https://graph.facebook.com/oizmenditelebista/picture?width=200&height=200" group-title="País Vasco", Oizmendi TV
+https://zuzenean.oizmendi.eus/hls/z.m3u8
+#EXTINF:-1 tvg-id="null" tvg-name="STZ Telebista" tvg-logo="https://graph.facebook.com/StzGrupo/picture?width=200&height=200" group-title="País Vasco", STZ Telebista
+https://cloudvideo.servers10.com:8081/stztelebista/index.m3u8
+#EXTINF:-1 tvg-id="PopularMU.TV" tvg-name="Popular TV Murcia" tvg-logo="https://pbs.twimg.com/profile_images/61224728/populartvtwitter_200x200.png" group-title="R. de Murcia", Popular TV Murcia
+https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=12128&live=1
+#EXTINF:-1 tvg-id="null" tvg-name="Arabí TV" tvg-logo="https://graph.facebook.com/arabitvyecla/picture?width=200&height=200" group-title="R. de Murcia", Arabí TV
+https://streamtv2.elitecomunicacion.cloud:3628/live/arabitv2025live.m3u8
+#EXTINF:-1 tvg-id="TVC.TV" tvg-name="TV3.CAT" tvg-logo="https://pbs.twimg.com/profile_images/1269286508625891328/rVes9BS__200x200.png" group-title="Int. Europa", TV3.CAT
+https://directes3-tv-int.3catdirectes.cat/live-content/tvi-hls/master.m3u8
+#EXTINF:-1 tvg-id="ETBSAT.TV" tvg-name="ETB Basque" tvg-logo="https://graph.facebook.com/eitb/picture?width=200&height=200" group-title="Int. Europa", ETB Basque
+https://multimedia.eitb.eus/live-content/eitbbasque-hls/master.m3u8

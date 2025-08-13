@@ -1,0 +1,35 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="Xarxa_Canal_Taronja_Anoia.TV" tvg-name="Canal Taronja Anoia" tvg-logo="https://graph.facebook.com/canaltaronjaanoia/picture?width=200&height=200" group-title="Cataluña", Canal Taronja Anoia
+https://ingest1-video.streaming-pro.com/canaltaronja/anoia/playlist.m3u8
+#EXTINF:-1 tvg-id="Xarxa_VOTV.TV" tvg-name="VOTV" tvg-logo="https://graph.facebook.com/votv.cat/picture?width=200&height=200" group-title="Cataluña", VOTV
+https://ingest2-video.streaming-pro.com/votv/streaming_web/playlist.m3u8
+#EXTINF:-1 tvg-id="null" tvg-name="Canal Taronja Osona i Moianés" tvg-logo="https://graph.facebook.com/TaronjaTV/picture?width=200&height=200" group-title="Cataluña", Canal Taronja Osona i Moianés
+https://ingest1-video.streaming-pro.com/canaltaronja/osona/playlist.m3u8
+#EXTINF:-1 tvg-id="Xarxa_TV_Girona.TV" tvg-name="TV de Girona" tvg-logo="https://graph.facebook.com/tvgirona/picture?width=200&height=200" group-title="Cataluña", TV de Girona
+https://ventdelnord.tv:8080/girona/directe.m3u8
+#EXTINF:-1 tvg-id="null" tvg-name="Piera TV" tvg-logo="https://yt3.ggpht.com/Yo_LIch5OT5hTA24FMlshk7MtHpuUbVoOd8U2HJGw6el7-cCkAhH8_ISKmww17wHn37FCOF_rg=s200" group-title="Cataluña", Piera TV
+https://5d776b1861da1.streamlock.net/piera/smil:piera.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="Xarxa_Canal_10_Emporda.TV" tvg-name="Canal 10 Empordà" tvg-logo="https://graph.facebook.com/canal10emporda/picture?width=200&height=200" group-title="Cataluña", Canal 10 Empordà
+https://ventdelnord.tv:8080/escala/directe.m3u8
+#EXTINF:-1 tvg-id="Xarxa_TV_Sabadell_Valles.TV" tvg-name="TV Sabadell Vallès" tvg-logo="https://graph.facebook.com/tvsabadellvalles/picture?width=200&height=200" group-title="Cataluña", TV Sabadell Vallès
+https://ingest1-video.streaming-pro.com/canaltaronja/sabadell/playlist.m3u8
+#EXTINF:-1 tvg-id="null" tvg-name="Fitel Television" tvg-logo="https://graph.facebook.com/FitelTelevision/picture?width=200&height=200" group-title="Cataluña", Fitel Television
+https://tv.mywifisocial.es/live.m3u8
+#EXTINF:-1 tvg-id="Telemadrid.TV" tvg-name="Telemadrid [3]" tvg-logo="https://graph.facebook.com/telemadrid/picture?width=200&height=200" group-title="C. de Madrid", Telemadrid
+https://eventos-23-secure2.akamaized.net/eventos_3-hls/master.m3u8
+#EXTINF:-1 tvg-id="null" tvg-name="Teleganés" tvg-logo="https://graph.facebook.com/1423419417957760/picture?width=200&height=200" group-title="C. de Madrid", Teleganés
+https://live.emitstream.com/hls/5z6oj7ziwxzfnj78vg2m/master.m3u8
+#EXTINF:-1 tvg-id="C33M.TV" tvg-name="C33 Madrid" tvg-logo="https://graph.facebook.com/Canal33Madrid/picture?width=200&height=200" group-title="C. de Madrid", C33 Madrid
+https://media2.streambrothers.com:1936/8140/8140/.m3u8
+#EXTINF:-1 tvg-id="null" tvg-name="LIRA TV" tvg-logo="https://graph.facebook.com/liratvlive/picture?width=200&height=200" group-title="C. de Madrid", LIRA TV
+https://cloud2.streaminglivehd.com:1936/liratv/liratv/playlist.m3u8
+#EXTINF:-1 tvg-id="null" tvg-name="Parlamento de Navarra" tvg-logo="https://pbs.twimg.com/profile_images/1517046445030924289/r4OIw84T_200x200.jpg" group-title="C. Foral de Navarra", Parlamento de Navarra
+https://broadcasting.parlamentodenavarra.es/live/canal1/playlist.m3u8?DVR
+#EXTINF:-1 tvg-id="null" tvg-name="Parlamento de Navarra [1]" tvg-logo="https://pbs.twimg.com/profile_images/1517046445030924289/r4OIw84T_200x200.jpg" group-title="C. Foral de Navarra", Parlamento de Navarra
+https://broadcasting.parlamentodenavarra.es/live/canal2/playlist.m3u8?DVR
+#EXTINF:-1 tvg-id="null" tvg-name="Parlamento de Navarra [2]" tvg-logo="https://pbs.twimg.com/profile_images/1517046445030924289/r4OIw84T_200x200.jpg" group-title="C. Foral de Navarra", Parlamento de Navarra
+https://broadcasting.parlamentodenavarra.es/live/canal3/playlist.m3u8?DVR
+#EXTINF:-1 tvg-id="8M.TV" tvg-name="La 8 Mediterráneo" tvg-logo="https://graph.facebook.com/la8mediterraneo/picture?width=200&height=200" group-title="C. Valenciana", La 8 Mediterráneo
+https://newscript.gestec-video.com/hls/8TVEVENTOS.m3u8
+#EXTINF:-1 tvg-id="null" tvg-name="Univers TV" tvg-logo="https://graph.facebook.com/UniversValenciaDigital/picture?width=200&height=200" group-title="C. Valenciana", Univers TV
+https://cloud2.streaminglivehd.com:1936/universfaller/universfaller/playlist.m3u8

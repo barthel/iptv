@@ -1,0 +1,23 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="null" tvg-name="101TV Sevilla" tvg-logo="https://graph.facebook.com/101TVSevilla/picture?width=200&height=200" group-title="Andalucía", 101TV Sevilla
+https://liveingesta318.cdnmedia.tv/101televisionlive/smil:rtmp02.smil/playlist.m3u8?DVR
+#EXTINF:-1 tvg-id="null" tvg-name="Cadena Joven TV" tvg-logo="https://graph.facebook.com/cadenajovendigital/picture?width=200&height=200" group-title="Andalucía", Cadena Joven TV
+https://streamtv2.elitecomunicacion.cloud:3738/live/cadenajoventvlive.m3u8
+#EXTINF:-1 tvg-id="null" tvg-name="PTV Linares" tvg-logo="https://graph.facebook.com/tvlinares/picture?width=200&height=200" group-title="Andalucía", PTV Linares
+https://streamer.zapitv.com/ptv-linarez/index.m3u8
+#EXTINF:-1 tvg-id="null" tvg-name="Manilva TV" tvg-logo="https://graph.facebook.com/rtvmanilva/picture?width=200&height=200" group-title="Andalucía", Manilva TV
+https://stream.castr.com/627a72d21914543be01c1720/live_e2ae1780dc2a11eca660b7b17b7952a5/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="9LaLoma.TV" tvg-name="9 la Loma TV" tvg-logo="https://graph.facebook.com/9laloma/picture?width=200&height=200" group-title="Andalucía", 9 la Loma TV
+https://9laloma.tv/live.m3u8
+#EXTINF:-1 tvg-id="null" tvg-name="PTV Sevilla" tvg-logo="https://graph.facebook.com/SevillaPTV/picture?width=200&height=200" group-title="Andalucía", PTV Sevilla
+https://streamer.zapitv.com/PTV_sevilla/index.m3u8
+#EXTINF:-1 tvg-id="null" tvg-name="PTV Granada" tvg-logo="https://graph.facebook.com/PTVGranada/picture?width=200&height=200" group-title="Andalucía", PTV Granada
+https://streamer.zapitv.com/PTV-granada/index.m3u8
+#EXTINF:-1 tvg-id="null" tvg-name="PTV Córdoba" tvg-logo="https://graph.facebook.com/PTVCOR/picture?width=200&height=200" group-title="Andalucía", PTV Córdoba
+https://streamer.zapitv.com/PTV_CORDOBA/index.m3u8
+#EXTINF:-1 tvg-id="null" tvg-name="101TV Costa del Sol" tvg-logo="https://graph.facebook.com/101tvmalaga/picture?width=200&height=200" group-title="Andalucía", 101TV Costa del Sol
+https://liveingesta318.cdnmedia.tv/101weblive/smil:sol.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="null" tvg-name="101TV Granada" tvg-logo="https://graph.facebook.com/101tvgranada/picture?width=200&height=200" group-title="Andalucía", 101TV Granada
+https://liveingesta318.cdnmedia.tv/101weblive/smil:granada.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="null" tvg-name="PTV Almería" tvg-logo="https://pbs.twimg.com/profile_images/1612490465005142019/AU1R7Q6q_200x200.jpg" group-title="Andalucía", PTV Almería
+https://streamer.zapitv.com/ptv_almeria/index.m3u8
