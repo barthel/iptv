@@ -111,6 +111,8 @@ https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=13354&live=1
 https://www.streaming101tv.es:19360/antequera/antequera.m3u8
 #EXTINF:-1 tvg-id="Telemotril.TV" tvg-name="Telemotril" tvg-logo="https://graph.facebook.com/telemotriltv/picture?width=200&height=200" group-title="Andalucía", Telemotril
 https://5940924978228.streamlock.net/8431/8431/playlist.m3u8
+#EXTINF:-1 tvg-id="null" tvg-name="Sal TV" tvg-logo="https://graph.facebook.com/SalTelevision/picture?width=200&height=200" group-title="Andalucía", Sal TV
+https://play.agenciastreaming.com:8081/saltv/index.m3u8
 #EXTINF:-1 tvg-id="CanalMalaga.TV" tvg-name="Canal Málaga" tvg-logo="https://graph.facebook.com/CanalMalagaRTVMunicipal/picture?width=200&height=200" group-title="Andalucía", Canal Málaga
 https://canalmalaga-tv-live.flumotion.com/playlist.m3u8
 #EXTINF:-1 tvg-id="101Axarquía.TV" tvg-name="101TV Axarquía" tvg-logo="https://graph.facebook.com/101Axarquia/picture?width=200&height=200" group-title="Andalucía", 101TV Axarquía
@@ -143,10 +145,6 @@ https://stream-us-east-1.getpublica.com/playlist.m3u8?cb=[CACHEBUSTER]&network_i
 https://videoserver.tmcreativos.com:19360/ccxwhsfcnq/ccxwhsfcnq.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Lancelot TV" tvg-logo="https://graph.facebook.com/LancelotTelevision/picture?width=200&height=200" group-title="Canarias", Lancelot TV
 https://5c0956165db0b.streamlock.net:8090/directo/_definst_/lancelot.television/master.m3u8
-#EXTINF:-1 tvg-id="null" tvg-name="Tenerife Plus+ TV" tvg-logo="https://graph.facebook.com/tenerifeplustv/picture?width=200&height=200" group-title="Canarias", Tenerife Plus+ TV
-https://k20.usastreams.com:8081/tenerifeplus/index.m3u8
-#EXTINF:-1 tvg-id="null" tvg-name="NORTEvisión" tvg-logo="https://graph.facebook.com/aljoamyvisual/picture?width=200&height=200" group-title="Canarias", NORTEvisión
-http://amaru.dyndns.org:8870/0.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="RTV Mogán" tvg-logo="https://graph.facebook.com/radiotelevisionmogan/picture?width=200&height=200" group-title="Canarias", RTV Mogán
 https://cloudvideo.servers10.com:8081/8028/index.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Este Canal TV" tvg-logo="https://graph.facebook.com/estecanaltv/picture?width=200&height=200" group-title="Canarias", Este Canal TV
@@ -465,18 +463,12 @@ https://redirector.rudo.video/hls-video/567ffde3fa319fadf3419efda25619456231dfea
 https://redirector.rudo.video/hls-video/567ffde3fa319fadf3419efda25619456231dfea/latinanoticias/latinanoticias.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Latina Perú [2]" tvg-logo="https://graph.facebook.com/Latina.pe/picture?width=200&height=200" group-title="Int. América", Latina Perú
 https://redirector.rudo.video/hls-video/plus226/latina2/latina2.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="null" tvg-name="NET Channel Perú" tvg-logo="https://pbs.twimg.com/profile_images/1839572220722454528/2u2sUAeY_200x200.jpg" group-title="Int. América", NET Channel Perú
-https://media.streambrothers.com:19360/8158/8158.m3u8
 #EXTINF:-1 tvg-id="TeleSUR.TV" tvg-name="TeleSUR Venezuela" tvg-logo="https://graph.facebook.com/teleSUR/picture?width=200&height=200" group-title="Int. América", TeleSUR Venezuela
 https://mblesmain01.telesur.ultrabase.net/mbliveMain/hd/playlist.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Oromar TV Ecuador" tvg-logo="https://graph.facebook.com/oromartv/picture?width=200&height=200" group-title="Int. América", Oromar TV Ecuador
 https://stream.oromar.tv/hls/oromartv_hi/index.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="WTV Nicaragua" tvg-logo="https://graph.facebook.com/WTVNicaraguacanal20/picture?width=200&height=200" group-title="Int. América", WTV Nicaragua
 https://cloudvideo.servers10.com:8081/8130/index.m3u8
-#EXTINF:-1 tvg-id="null" tvg-name="TeleDiario Costa Rica" tvg-logo="https://graph.facebook.com/MultimediosCR/picture?width=200&height=200" group-title="Int. América", TeleDiario Costa Rica
-https://mdstrm.com/live-stream-playlist/5a7b1e63a8da282c34d65445.m3u8
-#EXTINF:-1 tvg-id="CGTN.TV" tvg-name="CGTN" tvg-logo="https://graph.facebook.com/cgtnenespanol/picture?width=200&height=200" group-title="Int. Asia", CGTN
-https://espanol-livews.cgtn.com/hls/LSveOGBaBw41Ea7ukkVAUdKQ220802LSTexu6xAuFH8VZNBLE1ZNEa220802cd/playlist.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="CGTN News" tvg-logo="https://graph.facebook.com/ChinaGlobalTVNetwork/picture?width=200&height=200" group-title="Int. Asia", CGTN News
 https://english-livebkali.cgtn.com/live/encgtn.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="CGTN Documentary" tvg-logo="https://graph.facebook.com/ChinaGlobalTVNetwork/picture?width=200&height=200" group-title="Int. Asia", CGTN Documentary
@@ -487,16 +479,12 @@ https://live-hls-web-aje.getaj.net/AJE/index.m3u8
 https://live-hls-web-aja.getaj.net/AJA/index.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="NHK World Japan" tvg-logo="https://graph.facebook.com/nhkworld/picture?width=200&height=200" group-title="Int. Asia", NHK World Japan
 https://master.nhkworld.jp/nhkworld-tv/playlist/live.m3u8
-#EXTINF:-1 tvg-id="null" tvg-name="Arirang TV Korea" tvg-logo="https://graph.facebook.com/arirangtv/picture?width=200&height=200" group-title="Int. Asia", Arirang TV Korea
-https://amdlive-ch01-g-ctnd-com.akamaized.net/arirang_1gch/smil:arirang_1gch.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Al Arabiya Emiratos Árabes" tvg-logo="https://graph.facebook.com/AlArabiya/picture?width=200&height=200" group-title="Int. Asia", Al Arabiya Emiratos Árabes
 https://live.alarabiya.net/alarabiapublish/alarabiya.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Geo News Pakistan" tvg-logo="https://graph.facebook.com/GeoUrduDotTv/picture?width=200&height=200" group-title="Int. Asia", Geo News Pakistan
 https://jk3lz82elw79-hls-live.5centscdn.com/newgeonews/07811dc6c422334ce36a09ff5cd6fe71.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="India Today [1]" tvg-logo="https://graph.facebook.com/IndiaToday/picture?width=200&height=200" group-title="Int. Asia", India Today
 https://feeds.intoday.in/aajtak/api/master.m3u8
-#EXTINF:-1 tvg-id="null" tvg-name="New Delhi TV 24x7 India" tvg-logo="https://graph.facebook.com/ndtv/picture?width=200&height=200" group-title="Int. Asia", New Delhi TV 24x7 India
-https://ndtv24x7elemarchana.akamaized.net/hls/live/2003678/ndtv24x7/ndtv24x7master.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Republic World TV India" tvg-logo="https://graph.facebook.com/RepublicWorld/picture?width=200&height=200" group-title="Int. Asia", Republic World TV India
 https://vg-republictvlive.akamaized.net/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/vglive-sk-366023/main.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Hispan TV Iran" tvg-logo="https://pbs.twimg.com/profile_images/1645382928422109184/lUdeHBAs_200x200.jpg" group-title="Int. Asia", Hispan TV Iran
@@ -511,8 +499,6 @@ https://live.kh.malimarcdn.com/live/tvk2.stream/playlist.m3u8
 https://www.rthk.hk/feeds/dtt/rthktv32_https.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Teledifusão de Macau [1]" tvg-logo="https://graph.facebook.com/Canal.Macau/picture?width=200&height=200" group-title="Int. Asia", Teledifusão de Macau
 https://live5.tdm.com.mo/ch1/ch1.live/playlist.m3u8
-#EXTINF:-1 tvg-id="null" tvg-name="Teledifusão de Macau [2]" tvg-logo="https://graph.facebook.com/Canal.Macau/picture?width=200&height=200" group-title="Int. Asia", Teledifusão de Macau
-https://live5.tdm.com.mo/ch3/ch3.live/playlist.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Medi1 TV Marruecos" tvg-logo="https://graph.facebook.com/Medi1TV/picture?width=200&height=200" group-title="Int. África", Medi1 TV Marruecos
 https://streaming1.medi1tv.com/live/smil:medi1tv.smil/playlist.m3u8?DVR
 #EXTINF:-1 tvg-id="null" tvg-name="Medi1 TV Marruecos [1]" tvg-logo="https://graph.facebook.com/Medi1TV/picture?width=200&height=200" group-title="Int. África", Medi1 TV Marruecos
@@ -533,8 +519,6 @@ https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00047-tastemade-tastemadees16intern
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00047-tastemade-tastemadeinternationalenglish24i-ono/playlist.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Fashion TV" tvg-logo="https://graph.facebook.com/FTV/picture?width=200&height=200" group-title="Int. Otros", Fashion TV
 https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=5457&live=1
-#EXTINF:-1 tvg-id="null" tvg-name="Miami TV" tvg-logo="https://graph.facebook.com/miamitv/picture?width=200&height=200" group-title="Int. Otros", Miami TV
-https://59ec5453559f0.streamlock.net/miamitv/smil:WEB/playlist.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Miami TV [1]" tvg-logo="https://graph.facebook.com/miamitv/picture?width=200&height=200" group-title="Int. Otros", Miami TV
 https://59ec5453559f0.streamlock.net/Latino/smil:WEB/playlist.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Miami TV [2]" tvg-logo="https://graph.facebook.com/miamitv/picture?width=200&height=200" group-title="Int. Otros", Miami TV
@@ -673,49 +657,39 @@ https://3abn.bozztv.com/3abn2/Lat_live/smil:Lat_live.smil/playlist.m3u8
 https://televisa-televisa-1-it.samsung.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="MyTime movie network Mexico" tvg-logo="https://graph.facebook.com/mytimemovienetwork/picture?width=200&height=200" group-title="Int. América",MyTime movie network Mexico
 https://appletree-mytime-samsungmexico.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-id="93" tvg-name="PASIONES" tvg-logo="https://i.imgur.com/pasiones-logo.png" group-title="Novelas",PASIONES
-http://179.51.136.19:8000/play/a1bv/index.m3u8
-#EXTINF:-1 tvg-id="94" tvg-name="Pasiones HD" tvg-logo="https://i.imgur.com/pasiones-hd-logo.png" group-title="Novelas",Pasiones HD
+#EXTINF:-1 tvg-id="null" tvg-name="Pasiones HD" tvg-logo="https://i.imgur.com/pasiones-hd-logo.png" group-title="Novelas",Pasiones HD
 http://45.176.71.20:1689/play/a0nt
-#EXTINF:-1 tvg-id="96" tvg-name="TNT Novelas" tvg-logo="https://i.imgur.com/tnt-novelas-logo.png" group-title="Novelas",TNT Novelas
+#EXTINF:-1 tvg-id="null" tvg-name="TNT Novelas" tvg-logo="https://i.imgur.com/tnt-novelas-logo.png" group-title="Novelas",TNT Novelas
 http://200.60.124.19:29000/play/a06r
-#EXTINF:-1 tvg-id="97" tvg-name="KANAL D DRAMA" tvg-logo="https://i.imgur.com/kanal-d-logo.png" group-title="Novelas",KANAL D DRAMA
+#EXTINF:-1 tvg-id="null" tvg-name="KANAL D DRAMA" tvg-logo="https://i.imgur.com/kanal-d-logo.png" group-title="Novelas",KANAL D DRAMA
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01602-themahqfrance-vivekanald-samsungspain/playlist.m3u8
-#EXTINF:-1 tvg-id="35" tvg-name="Golden" tvg-logo="https://i.imgur.com/golden-logo.png" group-title="Películas",Golden
+#EXTINF:-1 tvg-id="null" tvg-name="Golden" tvg-logo="https://i.imgur.com/golden-logo.png" group-title="Películas",Golden
 http://181.119.85.222:8000/play/a00u/index.m3u8
-#EXTINF:-1 tvg-id="36" tvg-name="Golden Premiere" tvg-logo="https://i.imgur.com/golden-premiere-logo.png" group-title="Películas",Golden Premiere
+#EXTINF:-1 tvg-id="null" tvg-name="Golden Premiere" tvg-logo="https://i.imgur.com/golden-premiere-logo.png" group-title="Películas",Golden Premiere
 http://200.125.170.122:8000/play/a00l
-#EXTINF:-1 tvg-id="37" tvg-name="Cine Canal" tvg-logo="https://i.imgur.com/cinecanal-logo.png" group-title="Películas",Cine Canal
+#EXTINF:-1 tvg-id="null" tvg-name="Cine Canal" tvg-logo="https://i.imgur.com/cinecanal-logo.png" group-title="Películas",Cine Canal
 http://181.119.86.68:8000/play/b036/index.m3u8
-#EXTINF:-1 tvg-id="39" tvg-name="FX" tvg-logo="https://i.imgur.com/fx-logo.png" group-title="Películas",FX
+#EXTINF:-1 tvg-id="null" tvg-name="FX" tvg-logo="https://i.imgur.com/fx-logo.png" group-title="Películas",FX
 http://181.119.85.222:8000/play/a00s/index.m3u8
-#EXTINF:-1 tvg-id="40" tvg-name="De Pelicula" tvg-logo="https://i.imgur.com/depelicula-logo.png" group-title="Películas",De Pelicula
+#EXTINF:-1 tvg-id="null" tvg-name="De Pelicula" tvg-logo="https://i.imgur.com/depelicula-logo.png" group-title="Películas",De Pelicula
 http://181.119.85.222:8000/play/a013/index.m3u8
-#EXTINF:-1 tvg-id="41" tvg-name="SONY MOVIES HD" tvg-logo="https://i.imgur.com/sony-movies-logo.png" group-title="Películas",SONY MOVIES HD
-http://179.51.136.19:8000/play/a1aa/index.m3u8
-#EXTINF:-1 tvg-id="42" tvg-name="SPACE" tvg-logo="https://i.imgur.com/space-logo.png" group-title="Películas",SPACE
+#EXTINF:-1 tvg-id="null" tvg-name="SPACE" tvg-logo="https://i.imgur.com/space-logo.png" group-title="Películas",SPACE
 http://181.78.106.127:9000/play/ca072/index.m3u8
-#EXTINF:-1 tvg-id="43" tvg-name="STAR" tvg-logo="https://i.imgur.com/star-logo.png" group-title="Películas",STAR
+#EXTINF:-1 tvg-id="null" tvg-name="STAR" tvg-logo="https://i.imgur.com/star-logo.png" group-title="Películas",STAR
 http://181.119.86.68:8000/play/b014/index.m3u8
-#EXTINF:-1 tvg-id="44" tvg-name="STAR CHANNEL SD" tvg-logo="https://i.imgur.com/star-logo.png" group-title="Películas",STAR CHANNEL SD
+#EXTINF:-1 tvg-id="null" tvg-name="STAR CHANNEL SD" tvg-logo="https://i.imgur.com/star-logo.png" group-title="Películas",STAR CHANNEL SD
 http://200.60.124.19:29000/play/a01r
-#EXTINF:-1 tvg-id="45" tvg-name="STUDIO UNIVERSAL" tvg-logo="https://i.imgur.com/studio-universal-logo.png" group-title="Películas",STUDIO UNIVERSAL
+#EXTINF:-1 tvg-id="null" tvg-name="STUDIO UNIVERSAL" tvg-logo="https://i.imgur.com/studio-universal-logo.png" group-title="Películas",STUDIO UNIVERSAL
 http://181.119.86.68:8000/play/c024/index.m3u8
-#EXTINF:-1 tvg-id="46" tvg-name="TCM" tvg-logo="https://i.imgur.com/tcm-logo.png" group-title="Películas",TCM
+#EXTINF:-1 tvg-id="null" tvg-name="TCM" tvg-logo="https://i.imgur.com/tcm-logo.png" group-title="Películas",TCM
 http://200.60.124.19:29000/play/a01s/index.m3u8
-#EXTINF:-1 tvg-id="47" tvg-name="TNT" tvg-logo="https://i.imgur.com/tnt-logo.png" group-title="Películas",TNT
-http://179.51.136.19:8000/play/a1af/index.m3u8
-#EXTINF:-1 tvg-id="48" tvg-name="TNT SERIES" tvg-logo="https://i.imgur.com/tnt-series-logo.png" group-title="Series",TNT SERIES
-http://179.51.136.19:8000/play/a1al/index.m3u8
-#EXTINF:-1 tvg-id="49" tvg-name="Universal TV" tvg-logo="https://i.imgur.com/universal-tv-logo.png" group-title="Series",Universal TV
+#EXTINF:-1 tvg-id="null" tvg-name="Universal TV" tvg-logo="https://i.imgur.com/universal-tv-logo.png" group-title="Series",Universal TV
 http://181.119.85.222:8000/play/a00x/index.m3u8
-#EXTINF:-1 tvg-id="51" tvg-name="WARNER SD" tvg-logo="https://i.imgur.com/warner-logo.png" group-title="Películas",WARNER SD
+#EXTINF:-1 tvg-id="null" tvg-name="WARNER SD" tvg-logo="https://i.imgur.com/warner-logo.png" group-title="Películas",WARNER SD
 http://200.60.124.19:29000/play/a013
-#EXTINF:-1 tvg-id="52" tvg-name="SONY HD" tvg-logo="https://i.imgur.com/sony-logo.png" group-title="Películas",SONY HD
+#EXTINF:-1 tvg-id="null" tvg-name="SONY HD" tvg-logo="https://i.imgur.com/sony-logo.png" group-title="Películas",SONY HD
 http://181.119.86.68:8000/play/c023/index.m3u8
-#EXTINF:-1 tvg-id="53" tvg-name="AMC" tvg-logo="https://i.imgur.com/amc-logo.png" group-title="Películas",AMC
+#EXTINF:-1 tvg-id="null" tvg-name="AMC" tvg-logo="https://i.imgur.com/amc-logo.png" group-title="Películas",AMC
 http://181.78.106.127:9000/play/ca080/index.m3u8
-#EXTINF:-1 tvg-id="54" tvg-name="AXN HD" tvg-logo="https://i.imgur.com/axn-logo.png" group-title="Películas",AXN HD
+#EXTINF:-1 tvg-id="null" tvg-name="AXN HD" tvg-logo="https://i.imgur.com/axn-logo.png" group-title="Películas",AXN HD
 http://181.119.85.222:8000/play/a01y/index.m3u8
-#EXTINF:-1 tvg-id="55" tvg-name="PARAMOUNT" tvg-logo="https://i.imgur.com/paramount-logo.png" group-title="Películas",PARAMOUNT
-http://179.51.136.19:8000/play/a1am/index.m3u8
