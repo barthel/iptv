@@ -73,8 +73,6 @@ https://live-24-canalsur.interactvty.pro/9bb0f4edcb8946e79f5017ddca6c02b0/26af54
 https://dfk2a268yviz9.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-ddiii1m6jt6of/CanalSurAndaluciaES.m3u8
 #EXTINF:-1 tvg-id="OndaCadiz.TV" tvg-name="Onda Cádiz" tvg-logo="https://graph.facebook.com/ondacadiz/picture?width=200&height=200" group-title="Andalucía", Onda Cádiz
 https://ondacadiztv.es:30443/octv/directo_multi/playlist.m3u8
-#EXTINF:-1 tvg-id="null" tvg-name="Andalucía Cocina" tvg-logo="https://yt3.googleusercontent.com/ytc/APkrFKb6DZpbxOMbN_VANCdenLck4ceg7gxMk5tnkjmM=s200" group-title="Andalucía", Andalucía Cocina
-https://cloud.fastchannel.es/mic/manifiest/hls/acocina/acocina.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Andalucía Turismo" tvg-logo="https://yt3.googleusercontent.com/ytc/APkrFKYsl5e6jEIMtXIoTUHvkJqXxDfASrvQP_QFRRww=s200" group-title="Andalucía", Andalucía Turismo
 https://stream-us-east-1.getpublica.com/playlist.m3u8?&network_id=12685&live=1
 #EXTINF:-1 tvg-id="null" tvg-name="8TV Sierra de Cádiz" tvg-logo="https://graph.facebook.com/8tvChiclana/picture?width=200&height=200" group-title="Andalucía", 8TV Sierra de Cádiz
@@ -181,6 +179,8 @@ https://ingest2-video.streaming-pro.com/creus/stream/playlist.m3u8
 https://ingest1-video.streaming-pro.com/tac12_ABR/stream/playlist.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Piera TV" tvg-logo="https://yt3.ggpht.com/Yo_LIch5OT5hTA24FMlshk7MtHpuUbVoOd8U2HJGw6el7-cCkAhH8_ISKmww17wHn37FCOF_rg=s200" group-title="Cataluña", Piera TV
 https://5d776b1861da1.streamlock.net/piera/smil:piera.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="null" tvg-name="Mar TV" tvg-logo="https://graph.facebook.com/martelevisio/picture?width=200&height=200" group-title="Cataluña", Mar TV
+https://rfe-ingest.akamaized.net/hls/live/2033043/tvmc05/master.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="3CAT Càmeres del temps" tvg-logo="https://graph.facebook.com/som3Cat/picture?width=200&height=200" group-title="Cataluña", 3CAT Càmeres del temps
 https://directes-tv-int.3catdirectes.cat/live-content/beauties-hls/master.m3u8
 #EXTINF:-1 tvg-id="Telemadrid.TV" tvg-name="Telemadrid" tvg-logo="https://graph.facebook.com/telemadrid/picture?width=200&height=200" group-title="C. de Madrid", Telemadrid
@@ -189,8 +189,6 @@ https://telemadrid-23-secure2.akamaized.net/master.m3u8
 https://eventos-23-secure2.akamaized.net/eventos_1-hls/master.m3u8
 #EXTINF:-1 tvg-id="Telemadrid.TV" tvg-name="Telemadrid [2]" tvg-logo="https://graph.facebook.com/telemadrid/picture?width=200&height=200" group-title="C. de Madrid", Telemadrid
 https://eventos-23-secure2.akamaized.net/eventos_2-hls/master.m3u8
-#EXTINF:-1 tvg-id="LaOtra.TV" tvg-name="LaOtra" tvg-logo="https://pbs.twimg.com/profile_images/1279727978268839938/jSZUiboT_200x200.jpg" group-title="C. de Madrid", LaOtra
-https://laotra-1-23-secure2.akamaized.net/master.m3u8
 #EXTINF:-1 tvg-id="Distrito.TV" tvg-name="Distrito TV" tvg-logo="https://graph.facebook.com/2004860103163343/picture?width=200&height=200" group-title="C. de Madrid", Distrito TV
 https://live.emitstream.com/hls/3mn7wpcv7hbmxmdzaxap/master.m3u8
 #EXTINF:-1 tvg-id="Dejate.TV" tvg-name="Déjate de Historias TV" tvg-logo="https://graph.facebook.com/DejateDeHistoriasTV/picture?width=200&height=200" group-title="C. de Madrid", Déjate de Historias TV
@@ -295,6 +293,8 @@ https://zuzenean.goienamedia.eus/goiena-telebista.m3u8
 https://streaming.gitb.eus/hls/z.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="28 Kanala" tvg-logo="https://graph.facebook.com/28kanala/picture?width=200&height=200" group-title="País Vasco", 28 Kanala
 https://streaming.28kanala.eus/hls/z.m3u8
+#EXTINF:-1 tvg-id="null" tvg-name="GUKA TB" tvg-logo="https://graph.facebook.com/guka.eus/picture?width=200&height=200" group-title="País Vasco", GUKA TB
+https://streaming.ukt.eus/hls/test.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Oizmendi TV" tvg-logo="https://graph.facebook.com/oizmenditelebista/picture?width=200&height=200" group-title="País Vasco", Oizmendi TV
 https://zuzenean.oizmendi.eus/hls/z.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="STZ Telebista" tvg-logo="https://graph.facebook.com/StzGrupo/picture?width=200&height=200" group-title="País Vasco", STZ Telebista
@@ -325,10 +325,8 @@ https://d3749synfikwkv.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68
 https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/index.m3u8
 #EXTINF:-1 tvg-id="DW.TV" tvg-name="DW Alemania [1]" tvg-logo="https://graph.facebook.com/dw.espanol/picture?width=200&height=200" group-title="Int. Europa", DW Alemania
 https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8
-#EXTINF:-1 tvg-id="null" tvg-name="Das Erste Alemania" tvg-logo="https://graph.facebook.com/DasErste/picture?width=200&height=200" group-title="Int. Europa", Das Erste Alemania
-https://daserste-live.ard-mcdn.de/daserste/live/hls/int/master.m3u8
-#EXTINF:-1 tvg-id="null" tvg-name="WDR Alemania" tvg-logo="https://graph.facebook.com/WDR/picture?width=200&height=200" group-title="Int. Europa", WDR Alemania
-https://wdrfsww247.akamaized.net/hls/live/2009628/wdr_msl4_fs247ww/master.m3u8
+#EXTINF:-1 tvg-id="null" tvg-name="NDR Niedersachsen Alemania" tvg-logo="https://graph.facebook.com/ndrniedersachsen/picture?width=200&height=200" group-title="Int. Europa", NDR Niedersachsen Alemania
+https://ndrint.akamaized.net/hls/live/2020766/ndr_int/master.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Tagesschau24" tvg-logo="https://pbs.twimg.com/profile_images/2178044567/TS24-LOGO-Twitter_500_500_200x200.jpg" group-title="Int. Europa", Tagesschau24
 https://tagesschau.akamaized.net/hls/live/2020115/tagesschau/tagesschau_1/master.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Sky News UK" tvg-logo="https://graph.facebook.com/skynews/picture?width=200&height=200" group-title="Int. Europa", Sky News UK
@@ -355,10 +353,10 @@ https://best-str.umn.cdn.united.cloud/stream?stream=sp1400&sp=n1info&channel=n1h
 https://tringliveviz.akamaized.net/delta/105/out/u/qwaszxerdfcvrtryuy.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Channel 24 Ucrania" tvg-logo="https://graph.facebook.com/news24ukraine/picture?width=200&height=200" group-title="Int. Europa", Channel 24 Ucrania
 http://streamvideol1.luxnet.ua/news24/news24.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="null" tvg-name="UATV Ucrania" tvg-logo="https://graph.facebook.com/kanalfreedom/picture?width=200&height=200" group-title="Int. Europa", UATV Ucrania
-https://freedom.cdn-01.cosmonova.net.ua/mobile-app/main/freedom/master.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Current Time TV" tvg-logo="https://graph.facebook.com/currenttimetv/picture?width=200&height=200" group-title="Int. Europa", Current Time TV
 https://rfe-ingest.akamaized.net/hls/live/2033043/tvmc05/master.m3u8
+#EXTINF:-1 tvg-id="null" tvg-name="ABC News USA" tvg-logo="https://graph.facebook.com/ABCNews/picture?width=200&height=200" group-title="Int. América", ABC News USA
+https://content.uplynk.com/channel/3324f2467c414329b3b0cc5cd987b6be.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="CBS News USA" tvg-logo="https://graph.facebook.com/CBSNews/picture?width=200&height=200" group-title="Int. América", CBS News USA
 https://cbsn-us.cbsnstream.cbsnews.com/out/v1/55a8648e8f134e82a470f83d562deeca/master.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Cheddar USA" tvg-logo="https://graph.facebook.com/cheddar/picture?width=200&height=200" group-title="Int. América", Cheddar USA
@@ -439,8 +437,6 @@ https://vg-republictvlive.akamaized.net/v1/master/611d79b11b77e2f571934fd80ca141
 https://live.presstv.ir/hls/hispantv_5_482/index.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Channel NewsAsia" tvg-logo="https://graph.facebook.com/ChannelNewsAsia/picture?width=200&height=200" group-title="Int. Asia", Channel NewsAsia
 https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index.m3u8
-#EXTINF:-1 tvg-id="null" tvg-name="RTHK 31 32 Hong Kong" tvg-logo="https://graph.facebook.com/RTHK.HK/picture?width=200&height=200" group-title="Int. Asia", RTHK 31 32 Hong Kong
-https://www.rthk.hk/feeds/dtt/rthktv31_https.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="RTHK 31 32 Hong Kong [1]" tvg-logo="https://graph.facebook.com/RTHK.HK/picture?width=200&height=200" group-title="Int. Asia", RTHK 31 32 Hong Kong
 https://www.rthk.hk/feeds/dtt/rthktv32_https.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Medi1 TV Marruecos" tvg-logo="https://graph.facebook.com/Medi1TV/picture?width=200&height=200" group-title="Int. África", Medi1 TV Marruecos
@@ -537,8 +533,6 @@ https://server40.servistreaming.com:3477/stream/play.m3u8
 https://30a-tv.com/feeds/ceftech/30atvmusic.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Ditty TV USA" tvg-logo="https://graph.facebook.com/DittyTV/picture?width=200&height=200" group-title="Musicales", Ditty TV USA
 https://0ba805a2403b4660bbb05c0a210ebbdc.mediatailor.us-east-1.amazonaws.com/v1/master/04fd913bb278d8775298c26fdca9d9841f37601f/ONO_DittyTV/playlist.m3u8
-#EXTINF:-1 tvg-id="null" tvg-name="California Music Channel USA" tvg-logo="https://graph.facebook.com/CaliforniaMusicChannel/picture?width=200&height=200" group-title="Musicales", California Music Channel USA
-https://cmc-ono.amagi.tv/hls/amagi_hls_data_cmcAAAAAA-cmc-ono/CDN/playlist.m3u8?device=TDTChannels
 #EXTINF:-1 tvg-id="null" tvg-name="Spirit TV USA" tvg-logo="https://graph.facebook.com/MySpirittv/picture?width=200&height=200" group-title="Musicales", Spirit TV USA
 https://cdnlive.myspirit.tv/LS-ATL-43240-2/index.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Solidaria TV España" tvg-logo="https://graph.facebook.com/solidariatv/picture?width=200&height=200" group-title="Religiosos", Solidaria TV España
@@ -569,5 +563,15 @@ https://3abn.bozztv.com/3abn2/Lat_live/smil:Lat_live.smil/playlist.m3u8
 https://televisa-televisa-1-it.samsung.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="MyTime movie network Mexico" tvg-logo="https://graph.facebook.com/mytimemovienetwork/picture?width=200&height=200" group-title="Int. América",MyTime movie network Mexico
 https://appletree-mytime-samsungmexico.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="94" tvg-name="Pasiones HD" tvg-logo="https://i.imgur.com/pasiones-hd-logo.png" group-title="Novelas",Pasiones HD
+http://45.176.71.20:1689/play/a0nt
+#EXTINF:-1 tvg-id="96" tvg-name="TNT Novelas" tvg-logo="https://i.imgur.com/tnt-novelas-logo.png" group-title="Novelas",TNT Novelas
+http://200.60.124.19:29000/play/a06r
 #EXTINF:-1 tvg-id="97" tvg-name="KANAL D DRAMA" tvg-logo="https://i.imgur.com/kanal-d-logo.png" group-title="Novelas",KANAL D DRAMA
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01602-themahqfrance-vivekanald-samsungspain/playlist.m3u8
+#EXTINF:-1 tvg-id="36" tvg-name="Golden Premiere" tvg-logo="https://i.imgur.com/golden-premiere-logo.png" group-title="Películas",Golden Premiere
+http://200.125.170.122:8000/play/a00l
+#EXTINF:-1 tvg-id="44" tvg-name="STAR CHANNEL SD" tvg-logo="https://i.imgur.com/star-logo.png" group-title="Películas",STAR CHANNEL SD
+http://200.60.124.19:29000/play/a01r
+#EXTINF:-1 tvg-id="51" tvg-name="WARNER SD" tvg-logo="https://i.imgur.com/warner-logo.png" group-title="Películas",WARNER SD
+http://200.60.124.19:29000/play/a013
