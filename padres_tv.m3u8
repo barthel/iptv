@@ -9,10 +9,6 @@ https://hola-play-2108fd06-86d4-44e8-9867-c35b4895a1c1-es.fast.rakuten.tv/v1/mas
 https://live-24-canalsur.interactvty.pro/9bb0f4edcb8946e79f5017ddca6c02b0/26af5488cda642ed2eddd27a6328c93b9c03e9181b9d0a825147a7d978e69202.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Andalucía Cocina" tvg-logo="https://yt3.googleusercontent.com/ytc/APkrFKb6DZpbxOMbN_VANCdenLck4ceg7gxMk5tnkjmM=s200" group-title="Andalucía", Andalucía Cocina
 https://cloud.fastchannel.es/mic/manifiest/hls/acocina/acocina.m3u8
-#EXTINF:-1 tvg-id="Telemadrid.TV" tvg-name="Telemadrid" tvg-logo="https://graph.facebook.com/telemadrid/picture?width=200&height=200" group-title="C. de Madrid", Telemadrid
-https://telemadrid-23-secure2.akamaized.net/master.m3u8
-#EXTINF:-1 tvg-id="LaOtra.TV" tvg-name="LaOtra" tvg-logo="https://pbs.twimg.com/profile_images/1279727978268839938/jSZUiboT_200x200.jpg" group-title="C. de Madrid", LaOtra
-https://laotra-1-23-secure2.akamaized.net/master.m3u8
 #EXTINF:-1 tvg-id="Extremadura.TV" tvg-name="Canal Extremadura" tvg-logo="https://graph.facebook.com/CanalExtremadura/picture?width=200&height=200" group-title="Extremadura", Canal Extremadura
 https://canalextremadura-live.flumotion.cloud/canalextremadura/live_all/playlist_dvr.m3u8
 #EXTINF:-1 tvg-id="TVGAL.TV" tvg-name="TVG" tvg-logo="https://graph.facebook.com/CRTVG/picture?width=200&height=200" group-title="Galicia", TVG
@@ -31,16 +27,12 @@ http://player.cetelmon.tv/protecteddfd43c2f3a8b41f3f28582bf8993aca6/992_high.m3u
 https://televisa-televisa-1-it.samsung.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="MyTime movie network Mexico" tvg-logo="https://graph.facebook.com/mytimemovienetwork/picture?width=200&height=200" group-title="Int. América",MyTime movie network Mexico
 https://appletree-mytime-samsungmexico.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-id="null" tvg-name="PASIONES" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Pasiones_Tv_logo.svg/320px-Pasiones_Tv_logo.svg.png" group-title="Novelas",PASIONES
-http://179.51.136.19:8000/play/a1bv/index.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="TNT Novelas" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/TNT_Logo_2016.svg/250px-TNT_Logo_2016.svg.png" group-title="Novelas",TNT Novelas
 http://200.60.124.19:29000/play/a06r
 #EXTINF:-1 tvg-id="null" tvg-name="KANAL D DRAMA" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/de/Kanal_D_%281991-1994%29.png" group-title="Novelas",KANAL D DRAMA
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01602-themahqfrance-vivekanald-samsungspain/playlist.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Golden" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/bb/Golden_logo.png" group-title="Películas",Golden
 http://181.119.85.222:8000/play/a00u/index.m3u8
-#EXTINF:-1 tvg-id="null" tvg-name="Cine Canal" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/CinecanalLA.png/330px-CinecanalLA.png" group-title="Películas",Cine Canal
-http://181.119.86.68:8000/play/b036/index.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="De Pelicula" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/DPel%C3%ADcula_2021_%282%29.svg/258px-DPel%C3%ADcula_2021_%282%29.svg.png" group-title="Películas",De Pelicula
 http://181.119.85.222:8000/play/a013/index.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="TNT" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/TNT_Logo_2016.svg/250px-TNT_Logo_2016.svg.png" group-title="Películas",TNT
