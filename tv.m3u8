@@ -355,8 +355,6 @@ https://crtvg-events2.flumotion.cloud/playlist.m3u8
 https://crtvg-events3.flumotion.cloud/playlist.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="TVG Eventos [3]" tvg-logo="https://graph.facebook.com/CRTVG/picture?width=200&height=200" group-title="Galicia", TVG Eventos
 https://crtvg-events4.flumotion.cloud/playlist.m3u8
-#EXTINF:-1 tvg-id="null" tvg-name="TVG Mira Radio Galega" tvg-logo="https://graph.facebook.com/CRTVG/picture?width=200&height=200" group-title="Galicia", TVG Mira Radio Galega
-https://crtvg-mirarg-schlive.flumotion.cloud/crtvglive/smil:channel1PRG.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Corenta anos da TVG" tvg-logo="https://graph.facebook.com/CRTVG/picture?width=200&height=200" group-title="Galicia", Corenta anos da TVG
 https://crtvg-40-anos-crtvg-schlive.flumotion.cloud/crtvglive/smil:channel9PRG.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TeleVigo.TV" tvg-name="TeleVigo" tvg-logo="https://graph.facebook.com/televigo/picture?width=200&height=200" group-title="Galicia", TeleVigo
@@ -449,6 +447,8 @@ https://srfs.akamaized.net/hls/live/689649/srfsgeo/index.m3u8
 https://linear417-gb-hls1-prd-ak.cdn.skycdp.com/100e/Content/HLS_001_1080_30/Live/channel(skynews)/index_1080-30.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="GB News Reino Unido" tvg-logo="https://graph.facebook.com/GBNewsOnline/picture?width=200&height=200" group-title="Int. Europa", GB News Reino Unido
 https://amg01076-lightningintern-gbnews-samsunguk-0lu52.amagi.tv/playlist/amg01076-lightningintern-gbnews-samsunguk/playlist.m3u8
+#EXTINF:-1 tvg-id="null" tvg-name="Digi24 Rumanía" tvg-logo="https://graph.facebook.com/Digi24HD/picture?width=200&height=200" group-title="Int. Europa", Digi24 Rumanía
+https://pubads.g.doubleclick.net/ssai/event/OQfdjUhHSDSlb1fJVzehsQ/master.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="TRT World Turquía" tvg-logo="https://graph.facebook.com/trtworld/picture?width=200&height=200" group-title="Int. Europa", TRT World Turquía
 https://tv-trtworld.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="TRT World Turquía [1]" tvg-logo="https://graph.facebook.com/trtworld/picture?width=200&height=200" group-title="Int. Europa", TRT World Turquía
@@ -569,6 +569,8 @@ https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index.m3u
 https://live.kh.malimarcdn.com/live/tvk.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="TVK Camboya [1]" tvg-logo="https://play-lh.googleusercontent.com/vleeuJK2i7TYUHvqoQfsujviGBQ1EdFw4kZXlMh6f2V07YQfdK5nDBWeWY5o1IrIQw=w200" group-title="Int. Asia", TVK Camboya
 https://live.kh.malimarcdn.com/live/tvk2.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="null" tvg-name="RTHK 31 32 Hong Kong" tvg-logo="https://graph.facebook.com/RTHK.HK/picture?width=200&height=200" group-title="Int. Asia", RTHK 31 32 Hong Kong
+https://www.rthk.hk/feeds/dtt/rthktv31_https.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Teledifusão de Macau" tvg-logo="https://graph.facebook.com/Canal.Macau/picture?width=200&height=200" group-title="Int. Asia", Teledifusão de Macau
 https://live5.tdm.com.mo/ch2/ch2.live/playlist.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Teledifusão de Macau [1]" tvg-logo="https://graph.facebook.com/Canal.Macau/picture?width=200&height=200" group-title="Int. Asia", Teledifusão de Macau
@@ -659,6 +661,8 @@ https://4c4b867c89244861ac216426883d1ad0.msvdn.net/live/S62628868/uhdWBlkC1AoO/p
 https://4c4b867c89244861ac216426883d1ad0.msvdn.net/live/S35394734/Z6U2wGoDYANk/playlist.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="70-80's Italia" tvg-logo="https://play-lh.googleusercontent.com/OwKy6Ef_hOsjuSYtgh5aOHndFs2uo9evgrrjO4DYiOwXiAtWtSZiFMWY_OIcLU170NA=w200" group-title="Musicales", 70-80's Italia
 https://585b674743bbb.streamlock.net/9050/9050/playlist.m3u8
+#EXTINF:-1 tvg-id="null" tvg-name="On TV Portugal" tvg-logo="https://graph.facebook.com/ONFM93.8/picture?width=200&height=200" group-title="Musicales", On TV Portugal
+https://5ce9406b73c33.streamlock.net/ONFM/livestream/master.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Kronehit Austria" tvg-logo="https://graph.facebook.com/kronehit/picture?width=200&height=200" group-title="Musicales", Kronehit Austria
 https://bitcdn-kronehit.bitmovin.com/v2/hls/playlist.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="QMusic Países Bajos" tvg-logo="https://graph.facebook.com/QmusicNL/picture?width=200&height=200" group-title="Musicales", QMusic Países Bajos
