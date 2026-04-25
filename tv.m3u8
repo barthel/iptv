@@ -333,8 +333,6 @@ https://cloudvideo.servers10.com:8081/8116/index.m3u8
 https://streamingtvi.gestec-video.com/hls/unesd.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="33TV Catarroja" tvg-logo="https://graph.facebook.com/33Television/picture?width=200&height=200" group-title="C. Valenciana", 33TV Catarroja
 https://limited43.todostreaming.es/live/simbana-livestream.m3u8
-#EXTINF:-1 tvg-id="Extremadura.TV" tvg-name="Canal Extremadura" tvg-logo="https://graph.facebook.com/CanalExtremadura/picture?width=200&height=200" group-title="Extremadura", Canal Extremadura
-https://canalextremadura-live.flumotion.cloud/canalextremadura/live_all/playlist_dvr.m3u8
 #EXTINF:-1 tvg-id="TVGAL.TV" tvg-name="TVG" tvg-logo="https://graph.facebook.com/CRTVG/picture?width=200&height=200" group-title="Galicia", TVG
 https://crtvg-europa.flumotion.cloud/playlist.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="TVG Xabarin" tvg-logo="https://graph.facebook.com/oxabarinclub/picture?width=200&height=200" group-title="Galicia", TVG Xabarin
@@ -539,8 +537,6 @@ https://english-livebkali.cgtn.com/live/doccgtn.m3u8
 https://live-hls-web-aje-gcp.thehlive.com/AJE/index.m3u8
 #EXTINF:-1 tvg-id="AlJQ.TV" tvg-name="Al Jazeera Catar [1]" tvg-logo="https://graph.facebook.com/aljazeera/picture?width=200&height=200" group-title="Int. Asia", Al Jazeera Catar
 https://live-hls-web-aja.getaj.net/AJA/index.m3u8
-#EXTINF:-1 tvg-id="null" tvg-name="NHK World Japón" tvg-logo="https://graph.facebook.com/nhkworld/picture?width=200&height=200" group-title="Int. Asia", NHK World Japón
-https://media-tyo.hls.nhkworld.jp/hls/w/live/master.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Arirang TV Corea del Sur" tvg-logo="https://graph.facebook.com/arirangtv/picture?width=200&height=200" group-title="Int. Asia", Arirang TV Corea del Sur
 https://amdlive-ch01-g-ctnd-com.akamaized.net/arirang_1gch/smil:arirang_1gch.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Al Arabiya Emiratos Árabes" tvg-logo="https://graph.facebook.com/AlArabiya/picture?width=200&height=200" group-title="Int. Asia", Al Arabiya Emiratos Árabes
@@ -673,6 +669,8 @@ https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/broadcast_5c9e17
 https://livetv.powerapp.com.tr/powerTV/powerhd.smil/playlists.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="CMC Croacia" tvg-logo="https://graph.facebook.com/CroatianMusicChannel/picture?width=200&height=200" group-title="Musicales", CMC Croacia
 https://stream.cmctv.hr:49998/cmc/live.m3u8
+#EXTINF:-1 tvg-id="null" tvg-name="Sky Folk Macedonia" tvg-logo="https://graph.facebook.com/skyfolk.mk/picture?width=200&height=200" group-title="Musicales", Sky Folk Macedonia
+https://eu.live.skyfolk.mk/live.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="1Muz Bielorrusia" tvg-logo="https://graph.facebook.com/onemusicchannel/picture?width=200&height=200" group-title="Musicales", 1Muz Bielorrusia
 http://hz1.teleport.cc/HLS/HD.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="1Muz Bielorrusia [1]" tvg-logo="https://graph.facebook.com/onemusicchannel/picture?width=200&height=200" group-title="Musicales", 1Muz Bielorrusia
