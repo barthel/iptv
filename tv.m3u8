@@ -75,6 +75,8 @@ https://streaming004.gestec-video.com/hls/7TVMALAGA.m3u8
 https://especial7tv.gestec-video.com/hls/7TVSEVILLA.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="7TV Aljarafe" tvg-logo="https://graph.facebook.com/7TelevisionAndalucia/picture?width=200&height=200" group-title="Andalucía", 7TV Aljarafe
 https://streaming004.gestec-video.com/hls/7TVALJARAFE.m3u8
+#EXTINF:-1 tvg-id="null" tvg-name="7TV Arcos" tvg-logo="https://graph.facebook.com/7TelevisionAndalucia/picture?width=200&height=200" group-title="Andalucía", 7TV Arcos
+https://streaming004.gestec-video.com/hls/7TVARCOS.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="7TV Campo de Gibraltar" tvg-logo="https://graph.facebook.com/7TelevisionAndalucia/picture?width=200&height=200" group-title="Andalucía", 7TV Campo de Gibraltar
 https://streaming004.gestec-video.com/hls/7TVALGECIRAS.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="7TV Linares" tvg-logo="https://graph.facebook.com/7TelevisionAndalucia/picture?width=200&height=200" group-title="Andalucía", 7TV Linares
@@ -191,8 +193,6 @@ https://cloudvideo.servers10.com:8081/8108/index.m3u8
 https://nrvideo1.newradio.it:443/calimafm/calimafm/playlist.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="De Laredu Lin TV" tvg-logo="https://graph.facebook.com/delaredulintv/picture?width=200&height=200" group-title="Cantabria", De Laredu Lin TV
 https://eu1.servers10.com:8081/8034/index.m3u8
-#EXTINF:-1 tvg-id="PopularTV_S.TV" tvg-name="Popular TV Cantabria" tvg-logo="https://graph.facebook.com/populartvcantabria/picture?width=200&height=200" group-title="Cantabria", Popular TV Cantabria
-https://limited12.todostreaming.es/live/ptvcantabria-livestream.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Tevecan 9" tvg-logo="https://static.wixstatic.com/media/4d3432_610170cea6c747a986bbea4137f5c15f~mv2.png/v1/fill/w_200,h_200,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/mosca%20logo%209_transparente.png" group-title="Cantabria", Tevecan 9
 https://streamlov.alsolnet.com/jarbhouse/live/playlist.m3u8
 #EXTINF:-1 tvg-id="null" tvg-name="Saja Nansa TV" tvg-logo="https://graph.facebook.com/ondaoccidental/picture?width=200&height=200" group-title="Cantabria", Saja Nansa TV
